@@ -1,9 +1,20 @@
-header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+header .intro {
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
+
+#omakuva-me {
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    padding: 0px;
+    width: 70%;
+
+    margin: auto auto;
+}
+
 .contact-list {
-    color: blacks
+    color: blacks;
+    font-size: ;
 }
 
 .portfolio-item {
@@ -14,4 +25,16 @@ header .intro-text {
     width: 100%;
     height: 400px;
     background-color: bisque;
+}
+
+.flip-list-move {
+  transition: transform 1s;
+}
+
+
+#luonteet {
+    width = 100%;
+    margin-left: -20%;
+
+    text-align:;
 }
