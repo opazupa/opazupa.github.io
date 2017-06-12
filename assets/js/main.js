@@ -2,7 +2,7 @@
 
 function initialize() {
     var mapOptions = {
-        center: new google.maps.LatLng(61.476, 23.810942),
+        center: new google.maps.LatLng(61.456, 23.850942),
         zoom: 12,
         scrollwheel: false,
         draggable: true,
@@ -21,7 +21,6 @@ function initialize() {
         '</div>';
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
-        pixelOffset: new google.maps.Size(0, -15)
     });
 
     marker = new google.maps.Marker({
@@ -51,7 +50,7 @@ function toggleBounce() {
 new Vue({
   el: '#luonne-lista',
   data: {
-    items: ['Be sportmaniac','Smile all day everyday','Be curious','Or be awesome instead','Love yourself','Cherish friends']
+    items: ['Be sportmaniac.','Smile all day everyday :)','Be curious.','Or be awesome instead...','Love yourself <3','Cherish friends!']
   },
   methods: {
     shuffle: function () {
@@ -61,7 +60,11 @@ new Vue({
 })
 
 
-
 $(document).ready(function () {
     initialize();
+    $('#loading-screen').fadeOut(5500);
+
+
 });
+
+
