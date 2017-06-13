@@ -1,4 +1,5 @@
 // Googlemap api
+var scrollPos =0;
 
 function initialize() {
     var mapOptions = {
@@ -16,12 +17,6 @@ function initialize() {
     };
     var map = new google.maps.Map(document.getElementById("kartta"), mapOptions);
 
-    var contentString = '<div>' + '<span>Tutkijankatu 3 A 40 ' + '<br>' +
-        '33720 Tampere </span>' +
-        '</div>';
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString,
-    });
 
     marker = new google.maps.Marker({
         map: map,
@@ -33,7 +28,6 @@ function initialize() {
     });
 
     marker.addListener('click', function () {
-        infowindow.open(map, marker);
         toggleBounce();
     });
 }
@@ -60,11 +54,31 @@ new Vue({
 })
 
 
+
 $(document).ready(function () {
+
     initialize();
-    $('#loading-screen').fadeOut(5500);
+
+    $('#loading-screen').fadeOut(4000, function(){
+        $('#navi').show();
+    });
 
 
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+            var scrollTop = $(this).scrollTop();
+                 // set distance user needs to scroll before we start fadeIn
+            if (scrollTop >= scrollPos) {
+                $('#navi').fadeOut();
+            } else {
+                $('#navi').fadeIn();
+            }
+            scrollPos = scrollTop;
+        });
+    });
 });
 
 

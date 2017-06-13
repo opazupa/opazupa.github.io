@@ -18,14 +18,16 @@
 </head>
 
 <body id="ylalaita" class="index">
-   <div id="loading-screen">
-       <div id="spinner">
-           <img src="assets/images/cat.gif" style="responsive">
-           <p id="latausteksti">Wee I'm loading...</p>
-       </div>
-   </div>
+    <div id="loading-screen">
+        <div id="spinner-frame">
+            <div id="spinner">
+                <img src="assets/images/cat.gif" style="responsive">
+                <p id="latausteksti">Wee I'm loading...</p>
+            </div>
+        </div>
+    </div>
     <!-- Navigointi palikkka -->
-    <nav id="navi" class="navbars navbar-default navbar-custom ">
+    <nav id="navi" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -105,12 +107,27 @@
                 </div>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="skill-kuplat">
 
                 <h3 class="otsikko-mina">
-                    Education</h3>
-                <p class="pikkuteksti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                <div id="englanti-mittari" style="responsive" >
+                    Social</h3>
+
+                <div class="col-xs-6 kupla-kolumni">
+                    <div id="fin-skill" class="ldBar" data-value="100" data-preset="bubble">
+
+                    </div>
+                    <div id="de-skill" class="ldBar" data-value="70" data-preset="bubble">
+
+                    </div>
+
+                </div>
+                <div class="col-xs-6 kupla-kolumni">
+                    <div id="eng-skill" class="ldBar" data-value="95" data-preset="bubble">
+
+                    </div>
+                    <div id="swe-skill" class="ldBar" data-value="70" data-preset="bubble">
+
+                    </div>
 
                 </div>
             </div>
@@ -135,14 +152,13 @@
 
     </section>
 
-
     <!-- Aikajana -->
     <section id="timeline">
         <div class="container">
             <div class="rivi">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">My timeline</h2>
-                    <h4 class="section-alaotsikko pikkuteksti">“To infinity… and beyond!” <br>  Buzz Lightyear</h4>
+                    <h4 class="section-alaotsikko pikkuteksti">“To infinity… and beyond!” <br> Buzz Lightyear</h4>
                 </div>
             </div>
             <div class="row">
@@ -151,14 +167,13 @@
                         <li class="aikajanapala">
                             <div class="aikajana-kuva">
                                 <h4>My Story
-                                    <br>Begins<br>
-                                    In 1993
+                                    <br>Begins<br> In 1993
                                 </h4>
                             </div>
                         </li>
                         <li>
                             <div class="aikajana-kuva">
-                                <a href="https://salpausselanlukio.onedu.fi/web/" target="_blank" ><img class="img-circle img-responsive" src="assets/images/timeline/lahti.jpg" heigth="100%" alt="">
+                                <a href="https://salpausselanlukio.onedu.fi/web/" target="_blank"><img class="img-circle img-responsive" src="assets/images/timeline/lahti.jpg" heigth="100%" alt="">
                                 </a>
                             </div>
                             <div class="aikajanapala">
@@ -405,7 +420,6 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                     <ul class="list-unstyled contact-list">
-                        <li class="email"><i class="fa fa-envelope"></i><a href="mailto: olli.saarinen@leanware.fi"> olli.saarinen@leanware.fi    </a></li>
                         <li class="phone"><i class="fa fa-phone"></i><a href="tel:+358 44 5656 544"> +358 44 5656 544    </a></li>
                         <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://linkedin.com/in/olli-saarinen-25648889/" target="_blank"> linkedin.com/in/ollisaarinen    </a></li>
                         <li class="github"><i class="fa fa-github"></i><a href="https://github.com/opazupa" target="_blank"> github.com/opazupa    </a></li>
