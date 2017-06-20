@@ -98,7 +98,7 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
-    duration: 1400,
+    duration: 1900,
     text: {
         autoStyleContainer: false
     },
@@ -132,7 +132,7 @@ var englantiBar = new ProgressBar.Circle(englanti, {
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
-    duration: 1400,
+    duration: 2500,
     text: {
         autoStyleContainer: false
     },
@@ -165,7 +165,7 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
-    duration: 1400,
+    duration: 1800,
     text: {
         autoStyleContainer: false
     },
@@ -192,6 +192,23 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     }
 });
 
+var cplusBar = new ProgressBar.Line(cplus, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+  }
+});
+
+
+
 function clearCirceBars(){
     suomiBar.set(0);
     englantiBar.set(0);
@@ -212,7 +229,7 @@ $(document).ready(function () {
 
     initialize();
     setUpCircleBars(1,0.9,0.7,0.7);
-
+    cplusBar.animate(1.0);  // Number from 0.0 to 1.0
 
     $('#loading-screen').fadeOut(4000, function () {
         $('#navi').show();
