@@ -1,4 +1,3 @@
-<style></style>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +13,8 @@
 
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/plugins/loading-bar/loading-bar.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
 </head>
 
 <body id="ylalaita" class="index">
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="rivi text-center">
-                <div class="col-md-4">
+                <div class="col-md-4 col-md-4">
 
                     <img src="assets/images/olli.jpg" class="img-responsive " id="omakuva-me">
 
@@ -107,47 +107,46 @@
                 </div>
 
             </div>
-            <div class="col-md-4" id="skill-kuplat">
+            <div class="col-md-4 col-md-4" id="skill-ympyrat">
 
-                <h3 class="otsikko-mina">
-                    Social</h3>
+                <h3 class="otsikko-mina">Social</h3>
+                <div>
 
-                <div class="col-xs-6 kupla-kolumni">
-                    <div id="fin-skill" class="ldBar" data-value="100" data-preset="bubble">
-
-                    </div>
-                    <div id="de-skill" class="ldBar" data-value="70" data-preset="bubble">
-
+                    <div id="suomi" class="col-xs-6 kieli-skill">
+                    <p class="kieliteksti">Finnish</p>
                     </div>
 
+                    <div id="englanti" class="col-xs-6 kieli-skill">
+<p class="kieliteksti" >English</p>
+                    </div>
                 </div>
-                <div class="col-xs-6 kupla-kolumni">
-                    <div id="eng-skill" class="ldBar" data-value="95" data-preset="bubble">
+                <div>
 
-                    </div>
-                    <div id="swe-skill" class="ldBar" data-value="70" data-preset="bubble">
-
+                    <div id="ruotsi" class="col-xs-6 kieli-skill">
+   <p class="kieliteksti">Swedish</p>
                     </div>
 
+                    <div id="saksa" class="col-xs-6 kieli-skill">
+    <p class="kieliteksti">German</p>
+                    </div>
+                </div>
+
+                <div class="muut-taidot">
+                    <h4 class="otsikko-mina">My character</h4>
                 </div>
             </div>
             <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                <h4 class="otsikko-mina">Skills</h4>
-                <p class="pikkuteksti">Tähän sitten koulutus parille riville
+                <div id="skill-palkit">
+
+                    <h3 class="otsikko-mina">
+                        Programming skills</h3>
+
+                    <h4 class="skill-title">Backend</h4>
+                    <h4 class="skill-title">Frontend</h4>
+                    <h4 class="skill-title">Other</h4>
+
+                </div>
             </div>
-
-            <!-- esittely
-
-                     Kuva (TODO)
-                     Koulu (TODO)
-                     Tiedot (TODO)
-
-
-                 -->
         </div>
 
     </section>
@@ -374,15 +373,18 @@
         <div class="container">
             <div class="rivi">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-paaotsikko">Contact Us</h2>
-                    <h3 class="section-alaotsikko pikkuteksti">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-paaotsikko">Contact Me</h2>
+                    <h3 class="section-alaotsikko pikkuteksti">Fill the form and hit send!</h3>
                 </div>
             </div>
             <div class="rivi">
                 <div class="col-md-6">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="rivi">
-                            <div class="col-lg-6 col-md-3">
+                           <div class="col-lg-6 col-md-push-6">
+                               <p> Tähän joku logo</p>
+                           </div>
+                            <div class="col-lg-6 col-md-pull-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
@@ -405,7 +407,7 @@
                                 </div>
                             </div>
 
-                            <div class="clearfix"></div>
+
 
                         </div>
                     </form>
@@ -420,9 +422,9 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                     <ul class="list-unstyled contact-list">
-                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:+358 44 5656 544"> +358 44 5656 544    </a></li>
-                        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://linkedin.com/in/olli-saarinen-25648889/" target="_blank"> linkedin.com/in/ollisaarinen    </a></li>
-                        <li class="github"><i class="fa fa-github"></i><a href="https://github.com/opazupa" target="_blank"> github.com/opazupa    </a></li>
+                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:+358 44 5656 544"> +358 44 5656 544</a></li>
+                        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://linkedin.com/in/olli-saarinen-25648889/" target="_blank"> linkedin.com/in/ollisaarinen</a></li>
+                        <li class="github"><i class="fa fa-github"></i><a href="https://github.com/opazupa" target="_blank"> github.com/opazupa</a></li>
                     </ul>
                 </div>
             </div>
@@ -464,11 +466,13 @@
     <script src="assets/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Pluginit -->
-    <script src="assets/plugins/loading-bar/loading-bar.js"></script>
+    <script src="assets/plugins/progress-bar/progressBar.min.js"></script>
     <script src="assets/js/jqBootstrapValidation.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsxbsp88Rtr9Jc0oDY7bWB7QSRZFL6DCs&callback=initialize">
+
+
     </script>
 </body>
 
