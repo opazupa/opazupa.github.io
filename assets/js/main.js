@@ -66,7 +66,13 @@ var suomiBar = new ProgressBar.Circle(suomi, {
     easing: 'bounce',
     duration: 1400,
     text: {
-        autoStyleContainer: false
+        autoStyleContainer: true,
+        style:{
+            color: 'orange',
+            position: 'absolute',
+            top: '55%',
+            left: '45%',
+        },
     },
     from: {
         color: '#ffff66',
@@ -100,7 +106,13 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
     easing: 'bounce',
     duration: 1900,
     text: {
-        autoStyleContainer: false
+        autoStyleContainer: true,
+        style:{
+            color: 'orange',
+            position: 'absolute',
+            top: '55%',
+            left: '45%',
+        },
     },
     from: {
         color: '#ffff66',
@@ -134,7 +146,13 @@ var englantiBar = new ProgressBar.Circle(englanti, {
     easing: 'bounce',
     duration: 2500,
     text: {
-        autoStyleContainer: false
+        autoStyleContainer: true,
+        style:{
+            color: 'orange',
+            position: 'absolute',
+            top: '55%',
+            left: '45%',
+        },
     },
     from: {
         color: '#ffff66',
@@ -167,7 +185,14 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     easing: 'bounce',
     duration: 1800,
     text: {
-        autoStyleContainer: false
+        autoStyleContainer: true,
+        style:{
+            color: 'orange',
+            position: 'absolute',
+            top: '55%',
+            left: '45%',
+        },
+
     },
     from: {
         color: '#ffff66',
@@ -188,7 +213,6 @@ var saksaBar = new ProgressBar.Circle(saksa, {
         } else {
             circle.setText(value);
         }
-
     }
 });
 
@@ -231,7 +255,7 @@ $(document).ready(function () {
     setUpCircleBars(1,0.9,0.7,0.7);
     cplusBar.animate(1.0);  // Number from 0.0 to 1.0
 
-    $('#loading-screen').fadeOut(4000, function () {
+    $('#loading-screen').fadeOut(2500, function () {
         $('#navi').show();
     });
 
