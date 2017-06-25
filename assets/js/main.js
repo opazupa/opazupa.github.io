@@ -1,6 +1,7 @@
 // Googlemap api
 var scrollPos = 0;
-
+const kielitaidot = [1,0.9,0.75,0.75];
+const ohjelmointitaidot = [0.85,0.75];
 
 
 function initialize() {
@@ -67,7 +68,7 @@ var suomiBar = new ProgressBar.Circle(suomi, {
     duration: 1400,
     text: {
         autoStyleContainer: true,
-        style:{
+        style: {
             color: 'orange',
             position: 'absolute',
             top: '55%',
@@ -107,7 +108,7 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
     duration: 1900,
     text: {
         autoStyleContainer: true,
-        style:{
+        style: {
             color: 'orange',
             position: 'absolute',
             top: '55%',
@@ -147,7 +148,7 @@ var englantiBar = new ProgressBar.Circle(englanti, {
     duration: 2500,
     text: {
         autoStyleContainer: true,
-        style:{
+        style: {
             color: 'orange',
             position: 'absolute',
             top: '55%',
@@ -186,7 +187,7 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     duration: 1800,
     text: {
         autoStyleContainer: true,
-        style:{
+        style: {
             color: 'orange',
             position: 'absolute',
             top: '55%',
@@ -216,54 +217,130 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     }
 });
 
+var circleBars = [suomiBar,englantiBar,saksaBar,ruotsiBar];
+
+
+
 var cplusBar = new ProgressBar.Line(cplus, {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'},
-  from: {color: '#FFEA82'},
-  to: {color: '#ED6A5A'},
-  step: (state, bar) => {
-    bar.path.setAttribute('stroke', state.color);
-  }
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#FFEA82',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {
+        width: '100%',
+        height: '100%'
+    },
+    from: {
+        color: '#FFEA82'
+    },
+    to: {
+        color: '#ED6A5A'
+    },
+    step: (state, bar) => {
+        bar.path.setAttribute('stroke', state.color);
+    },
+    text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: 'black',
+            position: 'absolute',
+            left: '0%',
+            bottom: '20%',
+            padding: 0,
+            margin: 0,
+            transform: null,
+            zIndex:100
+        },
+        value:'C++',
+        autoStyleContainer: true
+    },
+});
+
+var javaBar = new ProgressBar.Line(java, {
+    strokeWidth: 4,
+    easing: 'bounce',
+    duration: 1400,
+    color: '#FFEA82',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {
+        width: '100%',
+        height: '100%'
+    },
+    from: {
+        color: '#FFEA82'
+    },
+    to: {
+        color: '#ED6A5A'
+    },
+    step: (state, bar) => {
+        bar.path.setAttribute('stroke', state.color);
+    },
+    text: {
+        style: {
+            // Text color.
+            // Default: same as stroke color (options.color)
+            color: 'black',
+            position: 'absolute',
+            left: '0',
+            bottom: '20%',
+            padding: 0,
+            margin: 0,
+            transform: null,
+            zIndex:100
+        },
+        value:'Java EE',
+        autoStyleContainer: true
+    },
 });
 
 
+var progressBars = [cplusBar,javaBar];
 
-function clearCirceBars(){
-    suomiBar.set(0);
-    englantiBar.set(0);
-    saksaBar.set(0);
-    ruotsiBar.set(0);
+function clearCirceBars() {
+    circleBars.forEach(bar => bar.set(0));
 }
 
-function setUpCircleBars(a,b,c,d){
+function setUpCircleBars(a) {
     clearCirceBars();
-    suomiBar.animate(a);
-    englantiBar.animate(b);
-    ruotsiBar.animate(c);
-    saksaBar.animate(d);
+    circleBars.forEach((bar, i) => bar.animate(a[i]) );
+}
+
+function clearProgressBars() {
+    progressBars.forEach(bar => bar.set(0));
+
+    //   $('.prog-skill').each(function(i) {
+     //  this.set(0);
+   // });
+}
+
+function setUpProgressBars(a) {
+    clearProgressBars();
+    progressBars.forEach((bar, i) => bar.animate(a[i]) );
 }
 
 
 $(document).ready(function () {
 
     initialize();
-    setUpCircleBars(1,0.9,0.7,0.7);
-    cplusBar.animate(1.0);  // Number from 0.0 to 1.0
-
+    setUpCircleBars(kielitaidot);
+    setUpProgressBars(ohjelmointitaidot);
     $('#loading-screen').fadeOut(2500, function () {
         $('#navi').show();
     });
 
     $('.kieli-skill').click(function () {
-                      clearCirceBars();
-        setUpCircleBars(1,0.9,0.7,0.7);
-                      });
+        clearCirceBars();
+        setUpCircleBars(kielitaidot);
+    });
 
+    $('.prog-skill').click(function () {
+        clearProgressBars();
+        setUpProgressBars(ohjelmointitaidot);
+    });
     // fade in .navbar
     $(function () {
         $(window).scroll(function () {
