@@ -60,42 +60,35 @@ new Vue({
 })
 
 
-function clearCirceBars() {
-    circleBars.forEach(bar => bar.set(0));
+function clearBars(bars) {
+    bars.forEach(bar => bar.set(0));
 }
 
-function setUpCircleBars(a) {
-    clearCirceBars();
-    circleBars.forEach((bar, i) => bar.animate(a[i]) );
+function setUpBars(bars,values) {
+    clearBars(bars);
+    bars.forEach((bar, i) => bar.animate(values[i]) );
 }
 
-function clearProgressBars() {
-    progressBars.forEach(bar => bar.set(0));
-}
-
-function setUpProgressBars(a) {
-    clearProgressBars();
-    progressBars.forEach((bar, i) => bar.animate(a[i]) );
-}
 
 
 $(document).ready(function () {
 
+
     initialize();
-    setUpCircleBars(kielitaidot);
-    setUpProgressBars(ohjelmointitaidot);
+    setUpBars(circleBars,kielitaidot);
+    setUpBars(progressBars,ohjelmointitaidot);
     $('#loading-screen').fadeOut(2500, function () {
         $('#navi').show();
     });
 
     $('.kieli-skill').click(function () {
-        clearCirceBars();
-        setUpCircleBars(kielitaidot);
+        clearBars(circleBars);
+        setUpBars(circleBars,kielitaidot);
     });
 
     $('.prog-skill').click(function () {
-        clearProgressBars();
-        setUpProgressBars(ohjelmointitaidot);
+        clearBars(progressBars);
+        setUpBars(progressBars,ohjelmointitaidot);
     });
     // fade in .navbar
     $(function () {
