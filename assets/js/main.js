@@ -1,5 +1,3 @@
-$.getScript('../assets/js/bars.js');
-
 // Googlemap api
 var scrollPos = 0;
 const kielitaidot = [1,0.9,0.75,0.75];
