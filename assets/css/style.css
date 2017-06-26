@@ -364,3 +364,12 @@ header .intro {
     border: 5px;
     border-color: black;
 }
+
+.prog-skill {
+    height: 30px;
+    padding-bottom: 15px;
+}
+
+#navi {
+    padding-right: '20px';
+}
