@@ -1,4 +1,4 @@
-$.getScript('/assets/js/bars.js');
+$.getScript('../assets/js/bars.js');
 
 // Googlemap api
 var scrollPos = 0;
