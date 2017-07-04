@@ -5,7 +5,7 @@ var suomiBar = new ProgressBar.Circle(suomi, {
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
-    duration: 1400,
+    duration: 8000,
     text: {
         autoStyleContainer: true,
         style: {
@@ -16,12 +16,12 @@ var suomiBar = new ProgressBar.Circle(suomi, {
         },
     },
     from: {
-        color: '#ffff66',
+        color: '#d1f4cb',
         width: 2
     },
     to: {
-        color: '#33cc33',
-        width: 5
+        color: '#5fea46',
+        width: 4
     },
     // Set default step function for all animate calls
     step: function (state, circle) {
@@ -45,7 +45,7 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
-    duration: 1900,
+    duration: 5000,
     text: {
         autoStyleContainer: true,
         style: {
@@ -56,12 +56,12 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
         },
     },
     from: {
-        color: '#ffff66',
+        color: '#d1f4cb',
         width: 2
     },
     to: {
-        color: '#33cc33',
-        width: 5
+        color: '#5fea46',
+        width: 4
     },
     // Set default step function for all animate calls
     step: function (state, circle) {
@@ -85,7 +85,7 @@ var englantiBar = new ProgressBar.Circle(englanti, {
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
-    duration: 2500,
+    duration: 5000,
     text: {
         autoStyleContainer: true,
         style: {
@@ -96,12 +96,12 @@ var englantiBar = new ProgressBar.Circle(englanti, {
         },
     },
     from: {
-        color: '#ffff66',
+        color: '#d1f4cb',
         width: 2
     },
     to: {
-        color: '#33cc33',
-        width: 5
+        color: '#5fea46',
+        width: 4
     },
     // Set default step function for all animate calls
     step: function (state, circle) {
@@ -124,7 +124,7 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
-    duration: 1800,
+    duration: 5000,
     text: {
         autoStyleContainer: true,
         style: {
@@ -136,12 +136,12 @@ var saksaBar = new ProgressBar.Circle(saksa, {
 
     },
     from: {
-        color: '#ffff66',
+        color: '#d1f4cb',
         width: 2
     },
     to: {
-        color: '#33cc33',
-        width: 5
+        color: '#5fea46',
+        width: 4
     },
     // Set default step function for all animate calls
     step: function (state, circle) {
@@ -164,8 +164,8 @@ const circleBars = [suomiBar,englantiBar,saksaBar,ruotsiBar];
 var cplusBar = new ProgressBar.Line(cplus, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -173,7 +173,7 @@ var cplusBar = new ProgressBar.Line(cplus, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -202,8 +202,8 @@ var cplusBar = new ProgressBar.Line(cplus, {
 var javaBar = new ProgressBar.Line(java, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -211,7 +211,7 @@ var javaBar = new ProgressBar.Line(java, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -238,8 +238,8 @@ var javaBar = new ProgressBar.Line(java, {
 var csharpBar = new ProgressBar.Line(csharp, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -247,7 +247,7 @@ var csharpBar = new ProgressBar.Line(csharp, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -274,8 +274,8 @@ var csharpBar = new ProgressBar.Line(csharp, {
 var pythonBar = new ProgressBar.Line(python, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -283,7 +283,7 @@ var pythonBar = new ProgressBar.Line(python, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -311,8 +311,8 @@ var pythonBar = new ProgressBar.Line(python, {
 var HTMLBar = new ProgressBar.Line(htmlcss, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -320,7 +320,7 @@ var HTMLBar = new ProgressBar.Line(htmlcss, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -347,8 +347,8 @@ var HTMLBar = new ProgressBar.Line(htmlcss, {
 var jsBar = new ProgressBar.Line(javascript, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -356,7 +356,7 @@ var jsBar = new ProgressBar.Line(javascript, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -383,8 +383,8 @@ var jsBar = new ProgressBar.Line(javascript, {
 var jqueryBar = new ProgressBar.Line(jquery, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -392,7 +392,7 @@ var jqueryBar = new ProgressBar.Line(jquery, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -419,8 +419,8 @@ var jqueryBar = new ProgressBar.Line(jquery, {
 var reactreduxBar = new ProgressBar.Line(reactredux, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -428,7 +428,7 @@ var reactreduxBar = new ProgressBar.Line(reactredux, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -455,8 +455,8 @@ var reactreduxBar = new ProgressBar.Line(reactredux, {
 var psqlBar = new ProgressBar.Line(psql, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -464,7 +464,7 @@ var psqlBar = new ProgressBar.Line(psql, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
@@ -491,8 +491,8 @@ var psqlBar = new ProgressBar.Line(psql, {
 var oracleBar = new ProgressBar.Line(oracle, {
     strokeWidth: 4,
     easing: 'easeInOut',
-    duration: 1400,
-    color: '#FFEA82',
+    duration: 7500,
+    color: '#f4decb',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -500,7 +500,7 @@ var oracleBar = new ProgressBar.Line(oracle, {
         height: '25px'
     },
     from: {
-        color: '#FFEA82'
+        color: '#f4decb'
     },
     to: {
         color: '#ED6A5A'
