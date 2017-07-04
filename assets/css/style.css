@@ -74,7 +74,7 @@ section {
 }
 
 .navbar-custom {
-    background-color: grey;
+    background-color: #494949;
     border-color: transparent;
 }
 
@@ -157,7 +157,7 @@ section {
 
 @media (min-width: 768px) {
     .navbar-custom.affix {
-        background-color: #222222;
+        background-color: #494949;
         padding: 10px 0;
     }
     .navbar-custom.affix .navbar-brand {
