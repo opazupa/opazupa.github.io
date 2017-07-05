@@ -75,8 +75,9 @@ $(document).ready(function () {
     initialize();
     setUpBars(circleBars,kielitaidot);
     setUpBars(progressBars,ohjelmointitaidot);
-    $('#loading-screen').fadeOut(2500, function () {
+    $('#loading-screen').fadeOut(1500, function () {
         $('#navi').show();
+        $('.intro').slideDown(1500);
     });
 
     $('.kieli-skill').click(function () {
@@ -100,6 +101,16 @@ $(document).ready(function () {
                 $('#navi').fadeIn();
             }
             scrollPos = scrollTop;
+
+            // Move intro on scroll
+
+            if(!(scrollPos > $('header').height())/3) {
+                $('.intro').css({"transform": "translateY(" + scrollPos/3 +"px)"});
+                $('.intro').animate({
+                    opacity:Math.abs(scrollPos/500-1)
+                },10);
+                console.log(scrollPos);
+            }
         });
     });
 

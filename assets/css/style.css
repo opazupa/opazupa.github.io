@@ -22,8 +22,8 @@ header .intro {
     text-align: center;
     color: whitesmoke;
     margin-bottom: 20px;
-    margin-top: 200px;
-
+    margin-top: 150px;
+    display: none;
 }
 
 section {
