@@ -107,7 +107,7 @@ $(document).ready(function () {
             if(!(scrollPos > $('header').height())/3) {
                 $('.intro').css({"transform": "translateY(" + scrollPos/3 +"px)"});
                 $('.intro').animate({
-                    opacity:Math.abs(scrollPos/500-1)
+                    opacity:1-scrollPos/500
                 },10);
                 console.log(scrollPos);
             }

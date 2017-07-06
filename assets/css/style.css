@@ -27,7 +27,11 @@ header .intro {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
+}
+
+.dark-bg {
+    background-color: beige;
 }
 
 #omakuva-me {
@@ -136,7 +140,9 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-custom .navbar-brand {
     color: orange;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-family: Merienda;
+    font-size: 25px;
+    font-style: italic;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -153,7 +159,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle {
     background-color: orange;
     border-color: orange;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Merienda;
     text-transform: uppercase;
     color: white;
     font-size: 12px;
@@ -165,8 +171,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom .nav li a {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    font-family: "Merienda";
     font-weight: 500;
     letter-spacing: 1px;
     color: black;
@@ -201,13 +206,18 @@ fieldset[disabled] .btn-xl.active {
         background-color: transparent;
     }
     .navbar-custom .navbar-brand {
-        font-size: 2em;
+        font-size: 4em;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
     }
     .navbar-custom .navbar-nav > .active > a {
         border-radius: 3px;
+    }
+
+    .navbar-custom .nav li a {
+        font-size: 20px;
+        font-weight: 700;
     }
 }
 
@@ -217,7 +227,7 @@ fieldset[disabled] .btn-xl.active {
         padding: 10px 0;
     }
     .navbar-custom.affix .navbar-brand {
-        font-size: 1.5em;
+        font-size: 3em;
     }
 }
 
@@ -225,10 +235,9 @@ fieldset[disabled] .btn-xl.active {
     transition: transform 1s;
 }
 
-#luonteet {
-    width: 100%;
-    margin-left: -10%;
-    list-style-type: none;
+#luonne-lista{
+        list-style-type: none;
+        width: 100%;
 }
 
 .aikajana {
@@ -607,7 +616,7 @@ body {
 .intro-johdatus {
     font-size:  60px;
     text-transform: uppercase;
-
+    font-weight: 900px;
     font-family: 'Merienda'
 
 }
@@ -615,6 +624,7 @@ body {
 .intro-otsikko {
     font-style: italic;
     font-size: 30px;
+    font-weight: 500;
     font-family: 'Merienda';
 }
 
@@ -622,3 +632,14 @@ textarea {
     max-height: inherit;
     max-width: inherit;
 }
+
+#motto {
+    background-color: #272822;
+    height: 220px;
+
+    background-image:  url("../images/motto.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
