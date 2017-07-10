@@ -31,7 +31,7 @@ section {
 }
 
 .dark-bg {
-    background-color: beige;
+    background-color: #e8e7e2;
 }
 
 #omakuva-me {
@@ -41,6 +41,7 @@ section {
     width: 70%;
     margin: auto auto;
 }
+
 
 .contact-list {
     text-align: center;
@@ -79,33 +80,35 @@ section {
 }
 
 .btn-xl {
-  color: white;
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 3px;
-  font-size: 18px;
-  padding: 20px 30px;
+    color: white;
+    background-color: #f4e542;
+    border-color: #f4e542;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 30px;
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
+
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+    color: white;
+    background-color: #fec503;
+    border-color: #f6bf01;
 }
+
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  background-image: none;
+    background-image: none;
 }
+
 .btn-xl.disabled,
 .btn-xl[disabled],
 fieldset[disabled] .btn-xl,
@@ -121,12 +124,13 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #fed136;
-  border-color: #fed136;
+    background-color: #f4e542;
+    border-color: #f4e542;
 }
+
 .btn-xl .badge {
-  color: #fed136;
-  background-color: white;
+    color: #f4e542;
+    background-color: white;
 }
 
 #navi {
@@ -139,7 +143,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom .navbar-brand {
-    color: orange;
+    color: black;
     font-family: Merienda;
     font-size: 25px;
     font-style: italic;
@@ -149,7 +153,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-    color: #fec503;
+    color: #f4e542;
 }
 
 .navbar-custom .navbar-collapse {
@@ -157,8 +161,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom .navbar-toggle {
-    background-color: orange;
-    border-color: orange;
+    background-color: #f4e542;
+    border-color: #f4e542;
     font-family: Merienda;
     text-transform: uppercase;
     color: white;
@@ -167,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-    background-color: orange;
+    background-color: #f4e542;
 }
 
 .navbar-custom .nav li a {
@@ -175,19 +179,18 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 500;
     letter-spacing: 1px;
     color: black;
-
 }
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-    color: orange;
+    color: #f4e542;
     outline: none;
 }
 
 .navbar-custom .navbar-nav > .active > a {
     border-radius: 0;
     color: white;
-    background-color: orange;
+    background-color: #f4e542;
 }
 
 .navbar-custom .navbar-nav > .active > a:hover,
@@ -214,7 +217,6 @@ fieldset[disabled] .btn-xl.active {
     .navbar-custom .navbar-nav > .active > a {
         border-radius: 3px;
     }
-
     .navbar-custom .nav li a {
         font-size: 20px;
         font-weight: 700;
@@ -235,9 +237,9 @@ fieldset[disabled] .btn-xl.active {
     transition: transform 1s;
 }
 
-#luonne-lista{
-        list-style-type: none;
-        width: 100%;
+#luonne-lista {
+    list-style-type: none;
+    width: 100%;
 }
 
 .aikajana {
@@ -252,7 +254,7 @@ fieldset[disabled] .btn-xl.active {
     position: absolute;
     content: "";
     width: 2px;
-    background-color: orange;
+    background-color: #f4e542;
     left: 40px;
     margin-left: -1.5px;
 }
@@ -279,6 +281,8 @@ fieldset[disabled] .btn-xl.active {
     padding: 0 20px 0 100px;
     position: relative;
     text-align: left;
+    background-color: #fcf6b5;
+    border-radius: 5px;
 }
 
 .aikajana > li .aikajanapala:before {}
@@ -292,7 +296,7 @@ fieldset[disabled] .btn-xl.active {
     height: 80px;
     position: absolute;
     z-index: 5;
-    background-color: orange;
+    background-color: #f4e542;
     color: white;
     border-radius: 100%;
     border: 7px solid #f1f1f1;
@@ -430,7 +434,16 @@ fieldset[disabled] .btn-xl.active {
     text-align: center;
 }
 
-#skill-ympyrat > div {}
+.kieli-skill {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    #skill-ympyrat > div {
+        max-width: 750%;
+        margin: 0 auto;
+    }
+}
 
 .container {
     height: auto;
@@ -441,7 +454,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .social-buttons > li > a:hover {
-    color: orange;
+    color: #f4e542;
 }
 
 .aikajana-kuva > img {
@@ -456,169 +469,195 @@ fieldset[disabled] .btn-xl.active {
 }
 
 #more .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
+    margin: 0 0 15px;
+    right: 0;
 }
+
 #more .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 300px;
-  margin: 0 auto;
+    display: block;
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
 }
+
 #more .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(254, 209, 54, 0.9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
+    background: rgba(254, 209, 54, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
 }
+
 #more .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
+    opacity: 1;
 }
+
 #more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: white;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: white;
 }
+
 #more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
+    margin-top: -12px;
 }
+
 #more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
+    margin: 0;
 }
+
 #more .portfolio-item .portfolio-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: white;
-  text-align: center;
-  padding: 25px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    padding: 25px;
 }
+
 #more .portfolio-item .portfolio-caption h4 {
-  text-transform: none;
-  margin: 0;
+    text-transform: none;
+    margin: 0;
 }
+
 #more .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  margin: 0;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0;
 }
+
 #more * {
-  z-index: 2;
+    z-index: 2;
 }
-@media (min-width: 767px) {
-  #more .portfolio-item {
-    margin: 0 0 30px;
-  }
+
+@media (min-width: 768px) {
+    #more .portfolio-item {
+        margin: 0 0 30px;
+    }
 }
 
 .portfolio-modal .modal-dialog {
-  margin: 0;
-  height: 100%;
-  width: auto;
+    margin: 0;
+    height: 100%;
+    width: auto;
 }
+
 .portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center;
 }
+
 .portfolio-modal .modal-content h2 {
-  margin-bottom: 15px;
-  font-size: 3em;
+    margin-bottom: 15px;
+    font-size: 3em;
 }
+
 .portfolio-modal .modal-content p {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .portfolio-modal .modal-content p.item-intro {
-  margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
+    margin: 20px 0 30px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
 }
+
 .portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 30px;
-  margin-top: 0;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
+
 .portfolio-modal .modal-content img {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
 }
+
 .portfolio-modal .close-modal:hover {
-  opacity: 0.3;
+    opacity: 0.3;
 }
+
 .portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #222222;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #222222;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+    z-index: 1051;
 }
+
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #222222;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
+    height: 75px;
+    width: 1px;
+    background-color: #222222;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari and Chrome */
+    z-index: 1052;
 }
+
 .portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
+    opacity: 0;
+    display: none;
 }
+
 ::-moz-selection {
-  text-shadow: none;
-  background: #fed136;
+    text-shadow: none;
+    background: #f4e542;
 }
+
 ::selection {
-  text-shadow: none;
-  background: #fed136;
+    text-shadow: none;
+    background: #f4e542;
 }
+
 img::selection {
-  background: transparent;
+    background: transparent;
 }
+
 img::-moz-selection {
-  background: transparent;
+    background: transparent;
 }
+
 body {
-  webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: #f4e542;
 }
 
 .intro-johdatus {
-    font-size:  60px;
+    font-size: 60px;
     text-transform: uppercase;
     font-weight: 900px;
     font-family: 'Merienda'
-
 }
 
 .intro-otsikko {
@@ -631,15 +670,27 @@ body {
 textarea {
     max-height: inherit;
     max-width: inherit;
+    resize: none;
 }
 
 #motto {
     background-color: #272822;
     height: 220px;
-
-    background-image:  url("../images/motto.png");
+    background-image: url("../images/motto.png");
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 2;
 }
 
+@media (max-width: 768px) {
+    #motto {
+        background-size: 50%;
+        height: 150px;
+    }
+}
+
+
+
+footer {
+    padding-top: 25px;
+}
