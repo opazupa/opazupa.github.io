@@ -85,8 +85,8 @@ section {
 
 .btn-xl {
     color: white;
-    background-color: #f2f20d;
-    border-color: #f2f20d;
+    background-color: #FFDE00;
+    border-color: #FFDE00;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -128,12 +128,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    background-color: #f2f20d;
-    border-color: #f2f20d;
+    background-color: #FFDE00;
+    border-color: #FFDE00;
 }
 
 .btn-xl .badge {
-    color: #f2f20d;
+    color: #FFDE00;
     background-color: white;
 }
 
@@ -148,16 +148,16 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-custom .navbar-brand {
     color: black;
-    font-family: Merienda;
+    font-family: Montserrat;
     font-size: 25px;
-    font-style: italic;
+    font-weight: 500;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-    color: #f2f20d;
+    color: #FFDE00;
 }
 
 .navbar-custom .navbar-collapse {
@@ -165,9 +165,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom .navbar-toggle {
-    background-color: #f2f20d;
-    border-color: #f2f20d;
-    font-family: Merienda;
+    background-color: #FFDE00;
+    border-color: #FFDE00;
+    font-family: Montserrat;
     text-transform: uppercase;
     color: white;
     font-size: 12px;
@@ -175,11 +175,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-    background-color: #f2f20d;
+    background-color: #FFDE00;
 }
 
 .navbar-custom .nav li a {
-    font-family: "Merienda";
+    font-family: "Montserrat";
     font-weight: 500;
     letter-spacing: 1px;
     color: black;
@@ -187,14 +187,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-    color: #f2f20d;
+    color: #FFDE00;
     outline: none;
 }
 
 .navbar-custom .navbar-nav > .active > a {
     border-radius: 0;
     color: white;
-    background-color: #f2f20d;
+    background-color: #FFDE00;
 }
 
 .navbar-custom .navbar-nav > .active > a:hover,
@@ -205,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
 
 @media (min-width: 768px) {
     .navbar-custom {
-        padding: 25px 0;
+        padding: 20px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -213,10 +213,11 @@ fieldset[disabled] .btn-xl.active {
         background-color: transparent;
     }
     .navbar-custom .navbar-brand {
-        font-size: 4em;
+        font-size: 2.5em;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
+        font-weight: 400;
     }
     .navbar-custom .navbar-nav > .active > a {
         border-radius: 3px;
@@ -233,7 +234,8 @@ fieldset[disabled] .btn-xl.active {
         padding: 10px 0;
     }
     .navbar-custom.affix .navbar-brand {
-        font-size: 3em;
+        font-size: 2em;
+        font-weight: 400;
     }
 }
 
@@ -244,6 +246,12 @@ fieldset[disabled] .btn-xl.active {
 #luonne-lista {
     list-style-type: none;
     width: 100%;
+    text-align: center;
+}
+
+#luonteet {
+    float: left;
+
 }
 
 .aikajana {
@@ -258,7 +266,7 @@ fieldset[disabled] .btn-xl.active {
     position: absolute;
     content: "";
     width: 2px;
-    background-color: #f2f20d;
+    background-color: #fcf6b5;
     left: 40px;
     margin-left: -1.5px;
 }
@@ -300,12 +308,14 @@ fieldset[disabled] .btn-xl.active {
     height: 80px;
     position: absolute;
     z-index: 5;
-    background-color: #f2f20d;
-    color: white;
+    background-color: white;
+    color: #000000;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 5px solid #e8e7e2;
     text-align: center;
 }
+
+
 
 .aikajana > li .aikajana-kuva h4 {
     font-size: 10px;
@@ -369,7 +379,7 @@ fieldset[disabled] .btn-xl.active {
         float: left;
         padding: 0 20px 20px 30px;
         text-align: right;
-    }
+        }
     .aikajana > li .aikajana-kuva {
         width: 100px;
         height: 100px;
@@ -467,7 +477,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .social-buttons > li > a:hover {
-    color: #f2f20d;
+    color: #FFDE00;
 }
 
 .aikajana-kuva > img {
@@ -646,12 +656,12 @@ fieldset[disabled] .btn-xl.active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #f2f20d;
+    background: #FFDE00;
 }
 
 ::selection {
     text-shadow: none;
-    background: #f2f20d;
+    background: #FFDE00;
 }
 
 img::selection {
@@ -663,21 +673,21 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #f2f20d;
+    webkit-tap-highlight-color: #FFDE00;
 }
 
 .intro-johdatus {
-    font-size: 60px;
-    text-transform: uppercase;
+    font-size: 40px;
     font-weight: 900px;
-    font-family: 'Merienda'
+    font-family: 'Montserrat'
 }
 
 .intro-otsikko {
-    font-style: italic;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'Merienda';
+
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Montserrat';
 }
 
 textarea {
@@ -705,5 +715,27 @@ textarea {
 
 
 footer {
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center
+}
+
+footer > div>div >div:first-child {
+    text-align: left;
+}
+
+footer > div>div >div:last-child {
+    text-align: right;
+}
+
+.section-paaotsikko {
+    font-family: Montserrat;
+    font-size: 40px;
+}
+#timeline .section-paaotsikko {
+    color: #FFFFFF;
+}
+
+#timeline .section-alaotsikko {
+    color: #FFFFFF;
 }

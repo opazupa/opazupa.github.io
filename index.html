@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+TODO: sivusta liukuvat sectionit kun scrollataan
+TODO: Tyylit
+TODO: Fontit (etenkin aikajana)
+TODO: php-scripti
+TODO: paddingit yms.
+TODO: modalit
 
+Hyviä fontteja:
+Montserrat, ostricht sans, planquin
+--->
 <head>
 
     <!-- Yleiset asetukset  -->
@@ -13,7 +23,7 @@
 
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900|Merienda" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900|Merienda|Montserrat" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -70,9 +80,9 @@
     <header>
         <div class="container">
             <div class="intro">
-                <div class="intro-johdatus">Hi!</div>
-                <div class="intro-otsikko">I'm Olli, nice to meet you!</div>
-                <a href="#me" class="page-scroll btn btn-xl">Wanna <br>Find out more?</a>
+                <div class="intro-johdatus">Hi! I'm Olli.</div>
+                <div class="intro-otsikko">It's nice to meet you!</div>
+                <a href="#me" class="page-scroll btn btn-xl">Want to<br>Find out more?</a>
             </div>
 
         </div>
@@ -83,7 +93,7 @@
         <div class="container">
             <div class="rivi">
                 <div class="col-lg-12 text-center">
-                    <h2> Me </h2>
+                    <h2 class="section-paaotsikko"> Me </h2>
                 </div>
             </div>
             <div class="row-eq-heigth text-center">
@@ -99,20 +109,13 @@
                             <li class="hometown">Jamming currently @ Tampere, Finland</li>
                         </ul>
                     </div>
-                    <div id="luonne-lista" class="demo" @mouseleave="shuffle" @mouseenter="shuffle">
-                        <h3 id="luonneotsikko">My way of life:</h3>
-                        <transition-group name="flip-list" tag="li">
-                            <li id="luonteet" v-for="item in items" v-bind:key="item">
-                                {{ item }}
-                            </li>
-                        </transition-group>
-                    </div>
+
                 </div>
 
             </div>
             <div class="col-md-4 col-md-pull-4" id="skill-ympyrat">
 
-                <h3 class="otsikko-mina">Social</h3>
+                <h3 class="otsikko-mina">Social (lippujen kuvat+ animointi)</h3>
                 <div>
 
                     <div id="suomi" class="col-xs-6 kieli-skill">
@@ -142,7 +145,7 @@
                 <div id="skill-palkit">
 
                     <h3 class="otsikko-mina">
-                        Programming skills</h3>
+                        Programming skills (ehkä keltaisella?)</h3>
 
                     <h4 class="skill-title">Backend</h4>
                     <div id="cplus" class="prog-skill"></div>
@@ -161,6 +164,14 @@
 
                 </div>
             </div>
+            <div id="luonne-lista" class="demo col-lg-12" @mouseleave="shuffle" @mouseenter="shuffle">
+                <h3 id="luonneotsikko">My way of life:</h3>
+                <transition-group name="flip-list" tag="li">
+                    <li id="luonteet" v-for="item in items" v-bind:key="item">
+                        {{ item }}
+                    </li>
+                </transition-group>
+            </div>
         </div>
 
     </section>
@@ -170,7 +181,7 @@
         <div class="container">
             <div class="rivi">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My timeline</h2>
+                    <h2 class="section-paaotsikko">My timeline</h2>
                     <h4 class="section-alaotsikko pikkuteksti">“To infinity… and beyond!” <br> Buzz Lightyear</h4>
                 </div>
             </div>
@@ -192,10 +203,10 @@
                             <div class="aikajanapala">
                                 <div class="aikajana-otsikko">
                                     <h4>2009-2012</h4>
-                                    <h4 class="alaotsikko">Matriculation examination, Salapasselkä's Upper Secondary School, Lahti</h4>
+                                    <h4 class="alaotsikko">Matriculation examination, Salpausselkä's Upper Secondary School, Lahti</h4>
                                 </div>
                                 <div class="aikajana-runko">
-                                    <p class="pikkuteksti">2012 I gratuated from Salpausselkä's upper secondary school with A-grades o Finnish, maths, English, Swedish, German and social studies. </p>
+                                    <p class="pikkuteksti">2012 I gratuated from Salpausselkä's upper secondary school. I have A-grades o Finnish, maths, English, Swedish, German and social studies. </p>
                                 </div>
                             </div>
                         </li>
@@ -227,7 +238,7 @@
                                     <h4 class="alaotsikko">Student at Tampere University of Technology, Finland</h4>
                                 </div>
                                 <div class="aikajana-runko">
-                                    <p class="pikkuteksti">I'm finishing my master's studies at TUT in the near future. Amazing times, amazing friends and amazing memories. Along with studies in automation, software and industrial engineering.</p>
+                                    <p class="pikkuteksti">I'm finishing my master's studies at TUT in the near future. Amazing times, even more amazing memories and the most amazing frineds. Along with studies in automation, software and industrial engineering.</p>
                                 </div>
                             </div>
                         </li>
@@ -371,7 +382,7 @@
     <section id="blog" class="dark-bg">
         <div class="container">
             <div class="rivi" align="center">
-                <p class="intro-johdatus"> BLOGIA?!</p>
+                <h2 class="section-paaotsikko"> BLOGIA?!</h2>
                 <!-- blogi?
 
                      Lisäykset
@@ -439,18 +450,18 @@
 
             </div>
 
-         <div class="col-lg-12 text-center">
+            <div class="col-lg-12 text-center">
 
             </div>
         </div>
     </section>
 
-   <section id="motto">
-       <div class="container-fluid">
-                          <div id="mottokuva">
-                                      </div>
-       </div>
-   </section>
+    <section id="motto">
+        <div class="container-fluid">
+            <div id="mottokuva">
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <div class="rivi">
@@ -527,6 +538,8 @@
     <script src="assets/plugins/lodash.min.js"></script>
     <script src="assets/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsxbsp88Rtr9Jc0oDY7bWB7QSRZFL6DCs&callback=initialize">
+
+
     </script>
     <script src="assets/plugins/progress-bar/progressBar.min.js"></script>
     <script src="assets/js/jqBootstrapValidation.js"></script>

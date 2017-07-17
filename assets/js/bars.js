@@ -165,7 +165,7 @@ var cplusBar = new ProgressBar.Line(cplus, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -173,10 +173,10 @@ var cplusBar = new ProgressBar.Line(cplus, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -203,7 +203,7 @@ var javaBar = new ProgressBar.Line(java, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -211,10 +211,10 @@ var javaBar = new ProgressBar.Line(java, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -239,7 +239,7 @@ var csharpBar = new ProgressBar.Line(csharp, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -247,10 +247,10 @@ var csharpBar = new ProgressBar.Line(csharp, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -275,7 +275,7 @@ var pythonBar = new ProgressBar.Line(python, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -283,10 +283,10 @@ var pythonBar = new ProgressBar.Line(python, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -312,7 +312,7 @@ var HTMLBar = new ProgressBar.Line(htmlcss, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -320,10 +320,10 @@ var HTMLBar = new ProgressBar.Line(htmlcss, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -348,7 +348,7 @@ var jsBar = new ProgressBar.Line(javascript, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -356,10 +356,10 @@ var jsBar = new ProgressBar.Line(javascript, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -384,7 +384,7 @@ var jqueryBar = new ProgressBar.Line(jquery, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -392,10 +392,10 @@ var jqueryBar = new ProgressBar.Line(jquery, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -420,7 +420,7 @@ var reactreduxBar = new ProgressBar.Line(reactredux, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -428,10 +428,10 @@ var reactreduxBar = new ProgressBar.Line(reactredux, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -456,7 +456,7 @@ var psqlBar = new ProgressBar.Line(psql, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -464,10 +464,10 @@ var psqlBar = new ProgressBar.Line(psql, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -492,7 +492,7 @@ var oracleBar = new ProgressBar.Line(oracle, {
     strokeWidth: 4,
     easing: 'easeInOut',
     duration: 7500,
-    color: '#f4decb',
+    color: '#FFFFFF',
     trailColor: 'none',
     trailWidth: 1,
     svgStyle: {
@@ -500,10 +500,10 @@ var oracleBar = new ProgressBar.Line(oracle, {
         height: '25px'
     },
     from: {
-        color: '#f4decb'
+        color: '#FFFFFF'
     },
     to: {
-        color: '#ED6A5A'
+        color: '#FFFF00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);

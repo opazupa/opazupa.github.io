@@ -48,7 +48,7 @@ function toggleBounce() {
 new Vue({
     el: '#luonne-lista',
     data: {
-        items: ['Be sportmaniac.', 'Smile all day everyday :)', 'Be curious.', 'Or be awesome instead...', 'Love yourself <3', 'Cherish friends!']
+        items: ['Be sportmaniac. ', 'Smile all day everyday :) ', 'Be curious. ', 'Or be awesome instead... ', 'Love yourself <3 ', 'Cherish friends! ']
     },
     methods: {
         shuffle: function () {
