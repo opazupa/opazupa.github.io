@@ -239,6 +239,10 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.flip-list {
+    margin: 0 auto;
+}
+
 .flip-list-move {
     transition: transform 1s;
 }
@@ -251,6 +255,9 @@ fieldset[disabled] .btn-xl.active {
 
 #luonteet {
     float: left;
+    font-family: fantasy;
+    padding-right: 10px;
+    margin: 0 auto;
 
 }
 
@@ -456,6 +463,10 @@ fieldset[disabled] .btn-xl.active {
     #skill-ympyrat > div {
         max-width: 750%;
         margin: 0 auto;
+    }
+
+    .kieli-skill {
+    padding: 45px;
     }
 
     #skill-ympyrat {

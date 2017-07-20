@@ -27,14 +27,6 @@ var suomiBar = new ProgressBar.Circle(suomi, {
     step: function (state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
-
-        var value = Math.round(circle.value() * 100);
-        if (value === 0) {
-            circle.setText('');
-        } else {
-            circle.setText(value);
-        }
-
     }
 });
 
@@ -67,13 +59,6 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
     step: function (state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
-
-        var value = Math.round(circle.value() * 100);
-        if (value === 0) {
-            circle.setText('');
-        } else {
-            circle.setText(value);
-        }
 
     }
 });
@@ -108,13 +93,6 @@ var englantiBar = new ProgressBar.Circle(englanti, {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
 
-        var value = Math.round(circle.value() * 100);
-        if (value === 0) {
-            circle.setText('');
-        } else {
-            circle.setText(value);
-        }
-
     }
 });
 var saksaBar = new ProgressBar.Circle(saksa, {
@@ -148,12 +126,6 @@ var saksaBar = new ProgressBar.Circle(saksa, {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
 
-        var value = Math.round(circle.value() * 100);
-        if (value === 0) {
-            circle.setText('');
-        } else {
-            circle.setText(value);
-        }
     }
 });
 
