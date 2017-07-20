@@ -249,15 +249,19 @@ fieldset[disabled] .btn-xl.active {
 
 #luonne-lista {
     list-style-type: none;
-    width: 100%;
+    width: 70%;
     text-align: center;
+    margin-left: 15%;
+    margin-left: 15%;
 }
 
 #luonteet {
     float: left;
     font-family: fantasy;
+    font-size: 20px;
+    padding-left: 10px;
     padding-right: 10px;
-    margin: 0 auto;
+    margin
 
 }
 
@@ -328,6 +332,8 @@ fieldset[disabled] .btn-xl.active {
     font-size: 10px;
     margin-top: 12px;
     line-height: 14px;
+    color: #000000;
+    font-family: Montserrat;
 }
 
 .aikajana > li.aikajanapala-kaannetty > .aikajanapala {
@@ -742,6 +748,7 @@ footer > div>div >div:last-child {
 .section-paaotsikko {
     font-family: Montserrat;
     font-size: 40px;
+    font-weight: 600;
 }
 #timeline .section-paaotsikko {
     color: #FFFFFF;
@@ -749,6 +756,13 @@ footer > div>div >div:last-child {
 
 #timeline .section-alaotsikko {
     color: #FFFFFF;
+    font-style: italic
+
+}
+
+.section-alaotsikko {
+    font-family: Montserrat;
+    text-align: center;
 }
 
 .animation-element.slide-left {
