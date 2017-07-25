@@ -16,11 +16,11 @@ var suomiBar = new ProgressBar.Circle(suomi, {
         },
     },
     from: {
-        color: '#d1f4cb',
+        color: '#FFFFFF',
         width: 2
     },
     to: {
-        color: '#5fea46',
+        color: '#0222be',
         width: 4
     },
     // Set default step function for all animate calls
@@ -48,11 +48,11 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
         },
     },
     from: {
-        color: '#d1f4cb',
+        color: '#FFFFFF',
         width: 2
     },
     to: {
-        color: '#5fea46',
+        color: '#FFDE00',
         width: 4
     },
     // Set default step function for all animate calls
@@ -81,11 +81,11 @@ var englantiBar = new ProgressBar.Circle(englanti, {
         },
     },
     from: {
-        color: '#d1f4cb',
+        color: '#FFFFFF',
         width: 2
     },
     to: {
-        color: '#5fea46',
+        color: '#e20808',
         width: 4
     },
     // Set default step function for all animate calls
@@ -114,11 +114,11 @@ var saksaBar = new ProgressBar.Circle(saksa, {
 
     },
     from: {
-        color: '#d1f4cb',
+        color: '#FFFFFF',
         width: 2
     },
     to: {
-        color: '#5fea46',
+        color: '#000000',
         width: 4
     },
     // Set default step function for all animate calls

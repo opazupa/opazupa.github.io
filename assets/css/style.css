@@ -39,7 +39,6 @@ section {
 #omakuva-me {
     border-top-left-radius: 120px;
     border-bottom-right-radius: 120px;
-    padding: 0px;
     width: 70%;
     margin: auto auto;
 }
@@ -468,6 +467,9 @@ fieldset[disabled] .btn-xl.active {
 
 .kieliteksti {
     text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    font-style:
 }
 
 .kieli-skill {
@@ -515,6 +517,8 @@ fieldset[disabled] .btn-xl.active {
 .prog-skill {
     height: 30px;
     padding-bottom: 15px;
+    font-family: Montserrat;
+
 }
 
 #more .portfolio-item {
@@ -765,13 +769,15 @@ footer > div>div >div:last-child {
 
 #timeline .section-alaotsikko {
     color: #FFFFFF;
-    font-style: italic
+    font-style: italic;
+    font-weight: 400;
 
 }
 
 .section-alaotsikko {
     font-family: Montserrat;
     text-align: center;
+    font-weight: 500;
 }
 
 .animation-element.slide-left {
@@ -825,3 +831,15 @@ footer > div>div >div:last-child {
 }
 
 
+
+.hometown {
+    font-family: Montserrat;
+    font-size: 20;
+    font-weight: 700;
+}
+
+.skill-title {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 20px
+}
