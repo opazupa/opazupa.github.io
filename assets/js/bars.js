@@ -1,11 +1,13 @@
 var suomiBar = new ProgressBar.Circle(suomi, {
-    color: '#aaa',
+    color: '#FFFFFF',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
     trailWidth: 2,
     easing: 'bounce',
     duration: 8000,
+    trailColor: '#FFFFFF',
+    fill: '#82CAFF',
     text: {
         autoStyleContainer: true,
         style: {
@@ -38,6 +40,8 @@ var ruotsiBar = new ProgressBar.Circle(ruotsi, {
     trailWidth: 2,
     easing: 'bounce',
     duration: 5000,
+    trailColor: '#FFFFFF',
+    fill: '#FFFFCC',
     text: {
         autoStyleContainer: true,
         style: {
@@ -69,6 +73,8 @@ var englantiBar = new ProgressBar.Circle(englanti, {
     // prevent clipping
     strokeWidth: 5,
     trailWidth: 2,
+    trailColor: '#FFFFFF',
+    fill: '#f5cbcb',
     easing: 'bounce',
     duration: 5000,
     text: {
@@ -85,7 +91,7 @@ var englantiBar = new ProgressBar.Circle(englanti, {
         width: 2
     },
     to: {
-        color: '#e20808',
+        color: '#c62828',
         width: 4
     },
     // Set default step function for all animate calls
@@ -103,6 +109,8 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     trailWidth: 2,
     easing: 'bounce',
     duration: 5000,
+    trailColor: '#FFFFFF',
+    fill: 'whitesmoke',
     text: {
         autoStyleContainer: true,
         style: {
@@ -129,7 +137,7 @@ var saksaBar = new ProgressBar.Circle(saksa, {
     }
 });
 
-const circleBars = [suomiBar,englantiBar,saksaBar,ruotsiBar];
+const circleBars = [suomiBar, englantiBar, saksaBar, ruotsiBar];
 
 
 
@@ -148,7 +156,7 @@ var cplusBar = new ProgressBar.Line(cplus, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -164,9 +172,9 @@ var cplusBar = new ProgressBar.Line(cplus, {
             padding: 0,
             margin: 0,
             transform: null,
-            zIndex:100
+            zIndex: 100
         },
-        value:'C++',
+        value: 'C++',
         autoStyleContainer: true
     },
 });
@@ -186,7 +194,7 @@ var javaBar = new ProgressBar.Line(java, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -202,7 +210,7 @@ var javaBar = new ProgressBar.Line(java, {
             padding: 0,
             transform: null
         },
-        value:'Java EE',
+        value: 'Java EE',
         autoStyleContainer: true
     },
 });
@@ -222,7 +230,7 @@ var csharpBar = new ProgressBar.Line(csharp, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -238,7 +246,7 @@ var csharpBar = new ProgressBar.Line(csharp, {
             padding: 0,
             transform: null
         },
-        value:'C#',
+        value: 'C#',
         autoStyleContainer: true
     },
 });
@@ -258,7 +266,7 @@ var pythonBar = new ProgressBar.Line(python, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -274,7 +282,7 @@ var pythonBar = new ProgressBar.Line(python, {
             padding: 0,
             transform: null
         },
-        value:'Python',
+        value: 'Python',
         autoStyleContainer: true
     },
 });
@@ -295,7 +303,7 @@ var HTMLBar = new ProgressBar.Line(htmlcss, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -311,7 +319,7 @@ var HTMLBar = new ProgressBar.Line(htmlcss, {
             padding: 0,
             transform: null
         },
-        value:'HTML&CSS',
+        value: 'HTML&CSS',
         autoStyleContainer: true
     },
 });
@@ -331,7 +339,7 @@ var jsBar = new ProgressBar.Line(javascript, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -347,7 +355,7 @@ var jsBar = new ProgressBar.Line(javascript, {
             padding: 0,
             transform: null
         },
-        value:'Javascript',
+        value: 'Javascript',
         autoStyleContainer: true
     },
 });
@@ -367,7 +375,7 @@ var jqueryBar = new ProgressBar.Line(jquery, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -383,7 +391,7 @@ var jqueryBar = new ProgressBar.Line(jquery, {
             padding: 0,
             transform: null
         },
-        value:'jQuery',
+        value: 'jQuery',
         autoStyleContainer: true
     },
 });
@@ -403,7 +411,7 @@ var reactreduxBar = new ProgressBar.Line(reactredux, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -419,7 +427,7 @@ var reactreduxBar = new ProgressBar.Line(reactredux, {
             padding: 0,
             transform: null
         },
-        value:'React+Redux',
+        value: 'React+Redux',
         autoStyleContainer: true
     },
 });
@@ -439,7 +447,7 @@ var psqlBar = new ProgressBar.Line(psql, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -455,7 +463,7 @@ var psqlBar = new ProgressBar.Line(psql, {
             padding: 0,
             transform: null
         },
-        value:'PostgreSQL',
+        value: 'PostgreSQL',
         autoStyleContainer: true
     },
 });
@@ -475,7 +483,7 @@ var oracleBar = new ProgressBar.Line(oracle, {
         color: '#FFFFFF'
     },
     to: {
-        color: '#FFFF00'
+        color: '#FFDE00'
     },
     step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -491,9 +499,9 @@ var oracleBar = new ProgressBar.Line(oracle, {
             padding: 0,
             transform: null
         },
-        value:'Oracle SQL',
+        value: 'Oracle SQL',
         autoStyleContainer: true
     },
 });
 
-const progressBars = [cplusBar,javaBar,csharpBar,pythonBar,HTMLBar, jsBar,jqueryBar,reactreduxBar,psqlBar,oracleBar];
+const progressBars = [cplusBar, javaBar, csharpBar, pythonBar, HTMLBar, jsBar, jqueryBar, reactreduxBar, psqlBar, oracleBar];

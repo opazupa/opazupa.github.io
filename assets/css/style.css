@@ -32,6 +32,16 @@ section {
     overflow-y: hidden;
 }
 
+.section-alaotsikko {
+    font-family: Montserrat;
+    text-align: center;
+    font-weight: 500;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 30px
+
+}
+
 .dark-bg {
     background-color: #e8e7e2;
 }
@@ -40,7 +50,9 @@ section {
     border-top-left-radius: 120px;
     border-bottom-right-radius: 120px;
     width: 70%;
-    margin: auto auto;
+    margin: 60px auto 0px auto;
+
+
 }
 
 #timeline {
@@ -206,15 +218,15 @@ fieldset[disabled] .btn-xl.active {
 
 #luonne-lista {
     list-style-type: none;
-    width: 70%;
+    width: 100%;
     text-align: center;
-    margin-left: 15%;
-    margin-left: 15%;
+    padding-top: 30px;
+
 }
 
 #luonteet {
     font-family: Merienda;
-    font-size: 10px;
+    font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -257,10 +269,10 @@ fieldset[disabled] .btn-xl.active {
     #luonteet {
     float: left;
     font-family: Merienda;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 19px;
+    padding-right: 5px;
     }
+
 }
 
 .flip-list {
@@ -501,11 +513,16 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .social-buttons > li > a {
-    color: black;
+    color: #000000;
+    z-index: 1;
 }
+
 
 .social-buttons > li > a:hover {
     color: #FFDE00;
+}
+.social-buttons {
+    margin-bottom: 10px;
 }
 
 .aikajana-kuva > img {
@@ -774,12 +791,6 @@ footer > div>div >div:last-child {
 
 }
 
-.section-alaotsikko {
-    font-family: Montserrat;
-    text-align: center;
-    font-weight: 500;
-}
-
 .animation-element.slide-left {
   opacity: 0;
   -moz-transition: all 500ms linear;
@@ -840,6 +851,9 @@ footer > div>div >div:last-child {
 
 .skill-title {
     text-align: left;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 20px
 }
+
+
+

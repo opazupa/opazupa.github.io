@@ -99,11 +99,11 @@ Montserrat, ostricht sans, planquin
                 </div>
             </div>
             <div class="row-eq-heigth text-center">
-                <div class="col-md-4 col-md-push-4 animation-element slide-up">
+                <div class="col-md-4 col-md-push-4 animation-element slide-up" id="my-info">
 
                     <img src="assets/images/opaBW.jpg" class="img-responsive " id="omakuva-me">
-
                     <h3 class="section-alaotsikko"> <i class="fa fa-male"></i> Olli Saarinen (B.Sc)</h3>
+
 
                     <div class="info-container container-block">
                         <ul class="list-unstyled info-list">
@@ -147,27 +147,27 @@ Montserrat, ostricht sans, planquin
                     <div id="skill-palkit">
 
                         <h3 class="section-alaotsikko">
-                            Programming skills - tähän jotain iconeita!!!</h3>
+                            Programming skills</h3>
 
-                        <h4 class="skill-title">Backend</h4>
+                        <h4 class="skill-title">Backend <i class="fa fa-terminal"></i></h4>
                         <div id="cplus" class="prog-skill"></div>
                         <div id="csharp" class="prog-skill"></div>
                         <div id="java" class="prog-skill"></div>
                         <div id="python" class="prog-skill"></div>
-                        <h4 class="skill-title">Frontend</h4>
+                        <h4 class="skill-title">Frontend <i class="fa fa-code"></i></h4>
                         <div id="htmlcss" class="prog-skill"></div>
                         <div id="javascript" class="prog-skill"></div>
                         <div id="jquery" class="prog-skill"></div>
                         <div id="reactredux" class="prog-skill"></div>
 
-                        <h4 class="skill-title">Other</h4>
+                        <h4 class="skill-title">Other <i class="fa fa-database"></i></h4>
                         <div id="psql" class="prog-skill"></div>
                         <div id="oracle" class="prog-skill"></div>
 
                     </div>
                 </div>
                 <div id="luonne-lista" class="demo col-lg-12" @mouseleave="shuffle" @mouseenter="shuffle">
-                    <h3 id="luonneotsikko">My way of life:</h3>
+                    <h3 class="section-alaotsikko">My way of life: <i class="fa fa-rocket fa-lg"></i></h3>
                     <transition-group name="flip-list" tag="li">
                         <li id="luonteet" v-for="item in items" v-bind:key="item">
                             {{ item }}
@@ -268,7 +268,7 @@ Montserrat, ostricht sans, planquin
                                         <br>Part Of
                                         <br>My Story!</h4>
                                 </a>
-                            </div><
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -293,7 +293,7 @@ Montserrat, ostricht sans, planquin
                 </div>
             </div>
             <div class="rivi">
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
                     <a href="#hobbyModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -303,8 +303,8 @@ Montserrat, ostricht sans, planquin
                         <img src="assets/images/refs-small.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="pikkuteksti">Graphic Design</p>
+                        <h4>Ice hockey</h4>
+                        <p class="pikkuteksti">Referee</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -468,25 +468,25 @@ Montserrat, ostricht sans, planquin
     <footer>
         <div class="container">
             <div class="rivi">
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                     <span class="copyright">Copyright &copy; Olli Saarinen 2017</span>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-6">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter animation-element slide-left"></i></a>
+                        <li><a href="#"><i class="fa fa-twitter fa-lg animation-element slide-left"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook animation-element slide-left"></i></a>
+                        <li><a href="#"><i class="fa fa-facebook fa-lg animation-element slide-left"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin animation-element slide-left"></i></a>
+                        <li><a href="#"><i class="fa fa-linkedin fa-lg animation-element slide-left"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-instagram animation-element slide-right"></i></a>
+                        <li><a href="#"><i class="fa fa-instagram fa-lg animation-element slide-right"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-snapchat animation-element slide-right"></i></a>
+                        <li><a href="#"><i class="fa fa-snapchat fa-lg animation-element slide-right"></i></a>
                         </li>
-                        <li><a href="https://github.com/opazupa" target="_blank"><i class="fa fa-github animation-element slide-right"></i></a></li>
+                        <li><a href="https://github.com/opazupa" target="_blank"><i class="fa fa-github fa-lg animation-element slide-right"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
