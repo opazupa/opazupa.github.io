@@ -29,6 +29,7 @@ header .intro {
 section {
     padding: 50px 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .dark-bg {
@@ -204,6 +205,21 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fec503;
 }
 
+#luonne-lista {
+    list-style-type: none;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-left: 15%;
+}
+
+#luonteet {
+    font-family: Merienda;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 @media (min-width: 768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -238,6 +254,14 @@ fieldset[disabled] .btn-xl.active {
         font-size: 2em;
         font-weight: 400;
     }
+
+    #luonteet {
+    float: left;
+    font-family: Merienda;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
 }
 
 .flip-list {
@@ -248,23 +272,7 @@ fieldset[disabled] .btn-xl.active {
     transition: transform 1s;
 }
 
-#luonne-lista {
-    list-style-type: none;
-    width: 70%;
-    text-align: center;
-    margin-left: 15%;
-    margin-left: 15%;
-}
 
-#luonteet {
-    float: left;
-    font-family: fantasy;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin
-
-}
 
 .aikajana {
     list-style: none;
@@ -472,12 +480,12 @@ fieldset[disabled] .btn-xl.active {
         margin: 0 auto;
     }
 
-    .kieli-skill {
-    padding: 45px;
+    #skill-ympyrat {
+    min-height: 500px;
     }
 
-    #skill-ympyrat {
-        background-color:
+    .kieli-skill {
+    padding: 45px;
     }
 
     #timeline {
@@ -815,3 +823,5 @@ footer > div>div >div:last-child {
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
+
+

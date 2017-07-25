@@ -11,6 +11,7 @@ TODO: modalit
 Hyviä fontteja:
 Montserrat, ostricht sans, planquin
 --->
+
 <head>
 
     <!-- Yleiset asetukset  -->
@@ -114,60 +115,65 @@ Montserrat, ostricht sans, planquin
                 </div>
 
             </div>
-            <div class="col-md-4 col-md-pull-4 animation-element slide-left" id="skill-ympyrat">
+            <div class="row-eq-heigth text-center">
+                <div class="col-md-4 col-md-pull-4 animation-element slide-left" id="skill-ympyrat">
+                    <div>
+                        <h3 class="section-alaotsikko">Social (lippujen kuvat+ animointi)</h3>
+                        <div>
 
-                <h3 class="section-alaotsikko">Social (lippujen kuvat+ animointi)</h3>
-                <div>
+                            <div id="suomi" class="col-xs-6 kieli-skill">
+                                <p class="kieliteksti">Finnish <i class="famfamfam-flag-fi"> </i></p>
+                            </div>
 
-                    <div id="suomi" class="col-xs-6 kieli-skill">
-                        <p class="kieliteksti">Finnish <i class="famfamfam-flag-fi"> </i></p>
+                            <div id="englanti" class="col-xs-6 kieli-skill">
+                                <p class="kieliteksti">English <i class="famfamfam-flag-gb"> </i></p>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div id="ruotsi" class="col-xs-6 kieli-skill">
+                                <p class="kieliteksti">Swedish <i class="famfamfam-flag-se"> </i></p>
+                            </div>
+
+                            <div id="saksa" class="col-xs-6 kieli-skill">
+                                <p class="kieliteksti">German <i class="famfamfam-flag-de"> </i></p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div id="englanti" class="col-xs-6 kieli-skill">
-                        <p class="kieliteksti">English <i class="famfamfam-flag-gb"> </i></p>
-                    </div>
-                </div>
-                <div>
-
-                    <div id="ruotsi" class="col-xs-6 kieli-skill">
-                        <p class="kieliteksti">Swedish <i class="famfamfam-flag-se"> </i></p>
-                    </div>
-
-                    <div id="saksa" class="col-xs-6 kieli-skill">
-                        <p class="kieliteksti">German <i class="famfamfam-flag-de"> </i></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animation-element slide-right">
-                <div id="skill-palkit">
-
-                    <h3 class="section-alaotsikko">
-                        Programming skills (ehkä keltaisella?)</h3>
-
-                    <h4 class="skill-title">Backend</h4>
-                    <div id="cplus" class="prog-skill"></div>
-                    <div id="csharp" class="prog-skill"></div>
-                    <div id="java" class="prog-skill"></div>
-                    <div id="python" class="prog-skill"></div>
-                    <h4 class="skill-title">Frontend</h4>
-                    <div id="htmlcss" class="prog-skill"></div>
-                    <div id="javascript" class="prog-skill"></div>
-                    <div id="jquery" class="prog-skill"></div>
-                    <div id="reactredux" class="prog-skill"></div>
-
-                    <h4 class="skill-title">Other</h4>
-                    <div id="psql" class="prog-skill"></div>
-                    <div id="oracle" class="prog-skill"></div>
-
                 </div>
             </div>
-            <div id="luonne-lista" class="demo col-lg-12" @mouseleave="shuffle" @mouseenter="shuffle">
-                <h3 id="luonneotsikko">My way of life:</h3>
-                <transition-group name="flip-list" tag="li">
-                    <li id="luonteet" v-for="item in items" v-bind:key="item">
-                        {{ item }}
-                    </li>
-                </transition-group>
+            <div class="row-eq-heigth text-center">
+                <div class="col-md-4 animation-element slide-right">
+                    <div id="skill-palkit">
+
+                        <h3 class="section-alaotsikko">
+                            Programming skills (ehkä keltaisella?)</h3>
+
+                        <h4 class="skill-title">Backend</h4>
+                        <div id="cplus" class="prog-skill"></div>
+                        <div id="csharp" class="prog-skill"></div>
+                        <div id="java" class="prog-skill"></div>
+                        <div id="python" class="prog-skill"></div>
+                        <h4 class="skill-title">Frontend</h4>
+                        <div id="htmlcss" class="prog-skill"></div>
+                        <div id="javascript" class="prog-skill"></div>
+                        <div id="jquery" class="prog-skill"></div>
+                        <div id="reactredux" class="prog-skill"></div>
+
+                        <h4 class="skill-title">Other</h4>
+                        <div id="psql" class="prog-skill"></div>
+                        <div id="oracle" class="prog-skill"></div>
+
+                    </div>
+                </div>
+                <div id="luonne-lista" class="demo col-lg-12" @mouseleave="shuffle" @mouseenter="shuffle">
+                    <h3 id="luonneotsikko">My way of life:</h3>
+                    <transition-group name="flip-list" tag="li">
+                        <li id="luonteet" v-for="item in items" v-bind:key="item">
+                            {{ item }}
+                        </li>
+                    </transition-group>
+                </div>
             </div>
         </div>
 
