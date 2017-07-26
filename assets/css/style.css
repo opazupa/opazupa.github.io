@@ -13,7 +13,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 100vh;
 }
 
 header .intro {
@@ -42,6 +42,10 @@ section {
 
 }
 
+#me .section-alaotsikko {
+    text-decoration:overline:;
+    text-decoration-style: dotted;
+}
 .dark-bg {
     background-color: #e8e7e2;
 }
@@ -50,7 +54,7 @@ section {
     border-top-left-radius: 120px;
     border-bottom-right-radius: 120px;
     width: 70%;
-    margin: 60px auto 0px auto;
+    margin: 30px auto 50px auto;
 
 
 }
@@ -346,6 +350,9 @@ fieldset[disabled] .btn-xl.active {
     text-align: center;
 }
 
+.aikajana-paa {
+    padding-top: 3px
+}
 
 
 .aikajana > li .aikajana-kuva h4 {
@@ -485,7 +492,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .kieli-skill {
-    padding: 20px;
+        padding: 0 20px 20px 20px;
 }
 
 @media (max-width: 768px) {
@@ -499,17 +506,13 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .kieli-skill {
-    padding: 45px;
+    padding: 0 35px 10px 35px;
     }
 
     #timeline {
         background-size: 100%;
     }
 
-}
-
-.container {
-    height: auto;
 }
 
 .social-buttons > li > a {
@@ -764,17 +767,8 @@ textarea {
 footer {
     padding-top: 20px;
     padding-bottom: 10px;
-    text-align: center
+    text-align: center;
 }
-
-footer > div>div >div:first-child {
-    text-align: left;
-}
-
-footer > div>div >div:last-child {
-    text-align: right;
-}
-
 .section-paaotsikko {
     font-family: Montserrat;
     font-size: 40px;
@@ -845,8 +839,8 @@ footer > div>div >div:last-child {
 
 .hometown {
     font-family: Montserrat;
-    font-size: 20;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .skill-title {
@@ -857,3 +851,14 @@ footer > div>div >div:last-child {
 
 
 
+
+#skill-palkit {
+    padding-left: 15px;
+}
+
+
+
+.aikajana-otsikko {
+    font-family: Montserrat;
+
+}
