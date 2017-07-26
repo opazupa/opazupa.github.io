@@ -7,7 +7,7 @@ var suomiBar = new ProgressBar.Circle(suomi, {
     easing: 'bounce',
     duration: 8000,
     trailColor: '#FFFFFF',
-    fill: '#82CAFF',
+    fill: '#acdbfa',
     text: {
         autoStyleContainer: true,
         style: {

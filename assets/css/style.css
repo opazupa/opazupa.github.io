@@ -1,6 +1,7 @@
 body {
     position: relative;
     overflow-x: hidden;
+    font-family: Montserrat;
 }
 
 header {
@@ -506,7 +507,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .kieli-skill {
-    padding: 0 35px 10px 35px;
+    padding: 0 35px 35px 35px;
     }
 
     #timeline {
@@ -589,7 +590,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 #more .portfolio-item .portfolio-caption {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     background-color: white;
     text-align: center;
@@ -861,4 +862,16 @@ footer {
 .aikajana-otsikko {
     font-family: Montserrat;
 
+}
+
+#contactForm {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#kartta {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 3px;
+    border-radius: 5px;
 }

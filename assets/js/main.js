@@ -34,7 +34,7 @@ function check_if_in_view() {
 function initialize() {
     var mapOptions = {
         center: new google.maps.LatLng(61.478, 23.785),
-        zoom: 12,
+        zoom: 11,
         scrollwheel: false,
         draggable: true,
         panControl: true,
