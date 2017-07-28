@@ -37,7 +37,7 @@ section {
     font-family: Montserrat;
     text-align: center;
     font-weight: 500;
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 20px;
         font-size: 30px
 
@@ -100,7 +100,52 @@ section {
     width: 100%;
     height: 100%;
 }
+.btn-primary {
+  color: white;
+  background-color: #FFDE00;
+  border-color: #FFDE00;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: white !important;
+  background-color: #fec503 !important;
+  border-color: #f6bf01 !important;
+}
 
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #FFDE00;
+  border-color: #FFDE00;
+}
+.btn-primary .badge {
+  color: #FFDE00;
+  background-color: white;
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
 .btn-xl {
     color: white;
     background-color: #FFDE00;
@@ -225,7 +270,7 @@ fieldset[disabled] .btn-xl.active {
     list-style-type: none;
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: -10px;
 
 }
 
@@ -498,16 +543,16 @@ fieldset[disabled] .btn-xl.active {
 
 @media (max-width: 768px) {
     #skill-ympyrat > div {
-        max-width: 750%;
+        max-width: 120%;
         margin: 0 auto;
     }
 
     #skill-ympyrat {
-    min-height: 500px;
+    min-height: 450px;
     }
 
     .kieli-skill {
-    padding: 0 35px 35px 35px;
+    padding: 0 35px 5px 35px;
     }
 
     #timeline {
@@ -865,8 +910,8 @@ footer {
 }
 
 #contactForm {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 #kartta {
