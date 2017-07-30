@@ -12,6 +12,7 @@ header {
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -webkit-backface-visibility: hidden;
     background-size: cover;
     -o-background-size: cover;
     width: 100%;
@@ -73,6 +74,7 @@ section {
     padding: 50px 0;
     overflow-x: hidden;
     overflow-y: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .section-alaotsikko {
@@ -247,6 +249,7 @@ fieldset[disabled] .btn-xl.active {
 
 #navi {
     display: none;
+    -webkit-backface-visibility: hidden;
 }
 
 .navbar-custom {
