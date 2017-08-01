@@ -853,6 +853,7 @@ footer {
     color: #FFFFFF;
     font-style: italic;
     font-weight: 400;
+    font-size: 22px;
 }
 
 .animation-element.slide-left {
@@ -931,8 +932,9 @@ footer {
 }
 
 #kartta {
-    border-style: solid;
-    border-color: #000000;
-    border-width: 3px;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.text-danger {
+    color: #a94442;
 }
