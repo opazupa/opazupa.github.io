@@ -837,6 +837,7 @@ footer {
     padding-bottom: 10px;
     text-align: center;
     overflow-x: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .section-paaotsikko {
