@@ -70,6 +70,12 @@ header .intro {
     }
 }
 
+@media (min-width: 1000px){
+    .intro-otsikko {
+        font-size: 75px;
+    }
+}
+
 section {
     padding: 50px 0;
     overflow-x: hidden;
@@ -260,9 +266,9 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand {
     color: black;
     font-family: Montserrat;
-    font-size: 25px;
+    font-size: 1.8em;
     font-weight: 500;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -293,6 +299,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .nav li a {
     font-family: "Montserrat";
     font-weight: 500;
+    font-size: 15px;
     letter-spacing: 1px;
     color: black;
 }
@@ -324,7 +331,7 @@ fieldset[disabled] .btn-xl.active {
 
 #luonteet {
     font-family: Merienda;
-    font-size: 14px;
+    font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -339,22 +346,19 @@ fieldset[disabled] .btn-xl.active {
         background-color: transparent;
     }
     .navbar-custom .navbar-brand {
-        font-size: 2.5em;
+        font-size: 2.2em;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
-        font-weight: 400;
+        font-weight: 500;
     }
     .navbar-custom .navbar-nav > .active > a {
         border-radius: 3px;
     }
     .navbar-custom .nav li a {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
     }
-}
-
-@media (min-width: 768px) {
     .navbar-custom.affix {
         background-color: #494949;
         padding: 10px 0;
@@ -362,6 +366,21 @@ fieldset[disabled] .btn-xl.active {
     .navbar-custom.affix .navbar-brand {
         font-size: 2em;
         font-weight: 400;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .navbar-custom .nav li a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .navbar-custom .navbar-brand {
+        font-size: 2.7em;
+    }
+    .navbar-custom.affix .navbar-brand {
+        font-size: 2.2em;
+        font-weight: 500;
     }
     #luonteet {
         float: left;
@@ -583,7 +602,15 @@ fieldset[disabled] .btn-xl.active {
 .kieli-skill {
     padding: 0 20px 20px 20px;
 }
+#skill-ympyrat > div {
+    max-width: 100%;
+}
 
+@media (max-width: 1000px) {
+    .kieli-skill {
+        padding: 0 60px 60px 60px;
+    }
+}
 @media (max-width: 768px) {
     #skill-ympyrat > div {
         max-width: 100%;
