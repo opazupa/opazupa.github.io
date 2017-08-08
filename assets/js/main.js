@@ -344,11 +344,12 @@ $(document).ready(function () {
 
             var scrollTop = $(this).scrollTop();
 
-            if (scrollTop >= scrollPos) {
-                $('#navi').fadeTo(20,0);
+            if (scrollTop > scrollPos) {
+                $('#navi').fadeIn();
             } else {
-                $('#navi').fadeTo(20,1);
+                $('#navi').fadeOut();
             }
+            console.log(scrollPos + " - " + scrollTop); 
             scrollPos = scrollTop;
 
             // Move intro on scroll
@@ -360,8 +361,8 @@ $(document).ready(function () {
                 $('.intro').animate({
                     opacity: 1 - scrollPos / 400
                 }, 10);
-                console.log(scrollPos);
             }
+
         });
     });
 
