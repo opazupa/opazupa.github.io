@@ -344,14 +344,15 @@ $(document).ready(function () {
 
             var scrollTop = $(this).scrollTop();
 
-            if (scrollTop >= scrollPos) {
+            if (scrollTop >= scrollPos && scrollTop != 0) {
                 
-                $('#navi').stop(false,true).fadeOut();
+                $('#navi').finish().fadeOut();
 
             } else {
-                $('#navi').stop(false,true).fadeIn();
+                $('#navi').finish().fadeIn();
                 
             }
+            console.log(scrollTop + "  -  " + scrollPos);
 
             scrollPos = scrollTop;
 
