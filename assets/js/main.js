@@ -344,7 +344,11 @@ $(document).ready(function () {
 
             var scrollTop = $(this).scrollTop();
 
-
+            if (scrollTop >= scrollPos) {
+                $('#navi').fadeTo(20,0);
+            } else {
+                $('#navi').fadeTo(20,1);
+            }
             scrollPos = scrollTop;
 
             // Move intro on scroll
