@@ -322,7 +322,7 @@ $(document).ready(function () {
     setUpBars(circleBars, kielitaidot);
     setUpBars(progressBars, ohjelmointitaidot);
     $('#loading-screen').fadeOut(1500, function () {
-        $('#navi').show();
+        $('#navi').animate({opacity: 1}, 25);
         $('.intro').slideDown(1500);
     });
 
@@ -344,7 +344,8 @@ $(document).ready(function () {
 
             var scrollTop = $(this).scrollTop();
 
-            if (scrollTop > scrollPos) {
+            if (scrollTop >= scrollPos || scrollTop == 0) {
+                
                 $('#navi').fadeIn();
             } else {
                 $('#navi').fadeOut();
