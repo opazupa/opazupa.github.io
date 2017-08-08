@@ -346,17 +346,11 @@ $(document).ready(function () {
 
             if (scrollTop >= scrollPos) {
                 
-<<<<<<< refs/remotes/origin/master
-                $('#navi').animate({opacity: 0}, 20);
-
-            } else {
-                $('#navi').animate({opacity: 1}, 20);
-=======
                 $('#navi').stop(false,true).fadeOut();
 
             } else {
                 $('#navi').stop(false,true).fadeIn();
->>>>>>> HEAD~0
+                
             }
 
             scrollPos = scrollTop;
