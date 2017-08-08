@@ -254,7 +254,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 #navi {
-    opacity: 0;
+    display: none;
     -webkit-backface-visibility: hidden;
 }
 
