@@ -346,10 +346,10 @@ $(document).ready(function () {
 
             if (scrollTop >= scrollPos && scrollTop != 0) {
                 
-                $('#navi').finish().fadeOut();
+                $('#navi').fadeOut();
 
             } else {
-                $('#navi').finish().fadeIn();
+                $('#navi').fadeIn();
                 
             }
             console.log(scrollTop + "  -  " + scrollPos);
