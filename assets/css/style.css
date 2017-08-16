@@ -255,9 +255,15 @@ fieldset[disabled] .btn-xl.active {
 
 #navi {
     display: none;
+<<<<<<< refs/remotes/origin/master
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
     z-index: 50;
+=======
+    -webkit-backface-visibility: hidden !important;
+    -webkit-transform-style: preserve-3d !important; 
+    z-index: 50 !important;
+>>>>>>> HEAD~0
 }
 
 .navbar-custom {
