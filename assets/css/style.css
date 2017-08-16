@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     font-family: Montserrat;
     -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 header {
@@ -231,7 +232,8 @@ fieldset[disabled] .btn-xl.active {
 #navi {
     display: none;
     -webkit-backface-visibility: hidden !important;
-    -webkit-transform-style: preserve-3d !important; 
+    -webkit-transform-style: preserve-3d !important;
+    -webkit-tap-highlight-color: transparent;
     z-index: 50 !important;
 
 }
