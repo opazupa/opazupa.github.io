@@ -210,7 +210,7 @@ var javaBar = new ProgressBar.Line(java, {
             padding: 0,
             transform: null
         },
-        value: 'Java EE',
+        value: 'Java EE + Spring',
         autoStyleContainer: true
     },
 });
