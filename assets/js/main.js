@@ -321,10 +321,10 @@ $(document).ready(function () {
     initialize();
     setUpBars(circleBars, kielitaidot);
     setUpBars(progressBars, ohjelmointitaidot);
-    $('#loading-screen').fadeOut(1500, function () {
+//    $('#loading-screen').fadeOut(1500, function () {
         $('#navi').fadeIn();
         $('.intro').slideDown(1500);
-    });
+//    });
 
     $('.kieli-skill').click(function () {
         clearBars(circleBars);
