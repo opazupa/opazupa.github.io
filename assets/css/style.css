@@ -49,32 +49,7 @@ header .intro {
     line-height: 50px;
 }
 
-@media (min-width: 370px) {
-    header .intro {
-        padding-bottom: 80px;
-        margin-bottom: 20px;
-    }
-    .intro-otsikko {
-        font-size: 55px;
-        line-height: normal;
-    }
-}
 
-@media (min-width: 600px) {
-    header .intro {
-        padding-bottom: 70px;
-        margin-bottom: 20px;
-    }
-    .intro-otsikko {
-        font-size: 75px;
-    }
-}
-
-@media (min-width: 1000px){
-    .intro-otsikko {
-        font-size: 75px;
-    }
-}
 
 section {
     padding: 50px 0;
@@ -110,7 +85,7 @@ section {
 
 #timeline {
     background-image: url(../images/wooden.jpg);
-    background-size: 50%;
+    background-size: 100%;
 }
 
 .contact-list {
@@ -255,15 +230,10 @@ fieldset[disabled] .btn-xl.active {
 
 #navi {
     display: none;
-<<<<<<< refs/remotes/origin/master
-    -webkit-backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-    z-index: 50;
-=======
     -webkit-backface-visibility: hidden !important;
     -webkit-transform-style: preserve-3d !important; 
     z-index: 50 !important;
->>>>>>> HEAD~0
+
 }
 
 .navbar-custom {
@@ -342,60 +312,6 @@ fieldset[disabled] .btn-xl.active {
     font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-@media (min-width: 768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border: none;
-        background-color: transparent;
-    }
-    .navbar-custom .navbar-brand {
-        font-size: 2.2em;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-        font-weight: 500;
-    }
-    .navbar-custom .navbar-nav > .active > a {
-        border-radius: 3px;
-    }
-    .navbar-custom .nav li a {
-        font-size: 15px;
-        font-weight: 700;
-    }
-    .navbar-custom.affix {
-        background-color: #494949;
-        padding: 10px 0;
-    }
-    .navbar-custom.affix .navbar-brand {
-        font-size: 2em;
-        font-weight: 400;
-    }
-}
-
-@media (min-width: 1000px) {
-
-    .navbar-custom .nav li a {
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .navbar-custom .navbar-brand {
-        font-size: 2.7em;
-    }
-    .navbar-custom.affix .navbar-brand {
-        font-size: 2.2em;
-        font-weight: 500;
-    }
-    #luonteet {
-        float: left;
-        font-family: Merienda;
-        font-size: 19px;
-        padding-right: 5px;
-    }
 }
 
 .flip-list {
@@ -519,83 +435,6 @@ fieldset[disabled] .btn-xl.active {
     margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-    .aikajana:before {
-        left: 50%;
-    }
-    .aikajana > li:first-child {
-        min-height: 150px;
-    }
-    .aikajana > li {
-        margin-bottom: 100px;
-        min-height: 100px;
-    }
-    .aikajana > li .aikajanapala {
-        width: 41%;
-        float: left;
-        padding: 0 20px 20px 30px;
-        text-align: right;
-    }
-    .aikajana > li .aikajana-kuva {
-        width: 100px;
-        height: 100px;
-        left: 50%;
-        margin-left: -50px;
-    }
-    .aikajana > li .aikajana-kuva h4 {
-        font-size: 13px;
-        margin-top: 16px;
-        line-height: 18px;
-    }
-    .aikajana > li.aikajanapala-kaannetty > .aikajanapala {
-        float: right;
-        text-align: left;
-        padding: 0 30px 20px 20px;
-    }
-}
-
-@media (min-width: 992px) {
-    .aikajana > li {
-        min-height: 150px;
-    }
-    .aikajana > li .aikajanapala {
-        padding: 0 20px 20px;
-    }
-    .aikajana > li .aikajana-kuva {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
-    }
-    .aikajana > li .aikajana-kuva h4 {
-        font-size: 18px;
-        margin-top: 30px;
-        line-height: 26px;
-    }
-    .aikajana > li.aikajanapala-kaannetty > .aikajanapala {
-        padding: 0 20px 20px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .aikajana > li {
-        min-height: 170px;
-    }
-    .aikajana > li .aikajanapala {
-        padding: 0 20px 20px 100px;
-    }
-    .aikajana > li .aikajana-kuva {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
-    }
-    .aikajana > li .aikajana-kuva h4 {
-        margin-top: 40px;
-    }
-    .aikajana > li.aikajanapala-kaannetty > .aikajanapala {
-        padding: 0 100px 20px 20px;
-    }
-}
-
 #spinner-frame {
     margin-top: -100px;
 }
@@ -608,31 +447,15 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .kieli-skill {
-    padding: 0 20px 20px 20px;
+    padding: 0 15px 20px 15px;
 }
-#skill-ympyrat > div {
-    max-width: 100%;
+#skill-ympyrat {
+    min-height: 400px;
 }
 
-@media (max-width: 1000px) {
-    .kieli-skill {
-        padding: 0 60px 60px 60px;
-    }
-}
-@media (max-width: 768px) {
-    #skill-ympyrat > div {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-    #skill-ympyrat {
-        min-height: 400px;
-    }
-    .kieli-skill {
-        padding: 0 15px 20px 15px;
-    }
-    #timeline {
-        background-size: 100%;
-    }
+#skill-ympyrat > div {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .social-buttons > li > a {
@@ -729,12 +552,6 @@ fieldset[disabled] .btn-xl.active {
 
 #more * {
     z-index: 2;
-}
-
-@media (min-width: 768px) {
-    #more .portfolio-item {
-        margin: 0 0 30px;
-    }
 }
 
 .portfolio-modal .modal-dialog {
@@ -841,10 +658,6 @@ img::-moz-selection {
     background: transparent;
 }
 
-body {
-    webkit-tap-highlight-color: #FFDE00;
-}
-
 textarea {
     max-height: inherit;
     max-width: inherit;
@@ -853,18 +666,12 @@ textarea {
 
 #motto {
     background-color: #272822;
-    height: 220px;
     background-image: url("../images/motto.png");
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 2;
-}
-
-@media (max-width: 768px) {
-    #motto {
-        background-size: 50%;
-        height: 150px;
-    }
+    background-size: 50%;
+    height: 150px;
 }
 
 footer {
@@ -983,4 +790,180 @@ footer {
     font-weight: 700;
     font-style: italic;
     
+}
+
+@media (min-width: 370px) {
+    header .intro {
+        padding-bottom: 80px;
+        margin-bottom: 20px;
+    }
+    .intro-otsikko {
+        font-size: 55px;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 600px) {
+    header .intro {
+        padding-bottom: 70px;
+        margin-bottom: 20px;
+    }
+    .intro-otsikko {
+        font-size: 75px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .kieli-skill {
+        padding: 0 60px 60px 60px;
+    }
+    .navbar-custom {
+        padding: 20px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        background-color: transparent;
+    }
+    .navbar-custom .navbar-brand {
+        font-size: 2.2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+    .navbar-custom .navbar-nav > .active > a {
+        border-radius: 3px;
+    }
+    .navbar-custom .nav li a {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .navbar-custom.affix {
+        background-color: #494949;
+        padding: 10px 0;
+    }
+    .navbar-custom.affix .navbar-brand {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    #timeline {
+        background-size: 50%;
+    }
+
+    .aikajana:before {
+        left: 50%;
+    }
+    .aikajana > li:first-child {
+        min-height: 150px;
+    }
+    .aikajana > li {
+        margin-bottom: 100px;
+        min-height: 100px;
+    }
+    .aikajana > li .aikajanapala {
+        width: 41%;
+        float: left;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+    .aikajana > li .aikajana-kuva {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px;
+    }
+    .aikajana > li .aikajana-kuva h4 {
+        font-size: 13px;
+        margin-top: 16px;
+        line-height: 18px;
+    }
+    .aikajana > li.aikajanapala-kaannetty > .aikajanapala {
+        float: right;
+        text-align: left;
+        padding: 0 30px 20px 20px;
+    }
+
+    #more .portfolio-item {
+        margin: 0 0 30px;
+    }
+    #motto {
+        background-size: 50%;
+        height: 220px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .intro-otsikko {
+        font-size: 75px;
+    }
+    .kieli-skill {
+        padding: 0 20px 20px 20px;
+    }
+    #luonteet {
+        float: left;
+        font-family: Merienda;
+        font-size: 19px;
+        padding-right: 5px;
+    }
+    .aikajana > li {
+        min-height: 150px;
+    }
+    .aikajana > li .aikajanapala {
+        padding: 0 20px 20px;
+    }
+    .aikajana > li .aikajana-kuva {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+    .aikajana > li .aikajana-kuva h4 {
+        font-size: 18px;
+        margin-top: 30px;
+        line-height: 26px;
+    }
+    .aikajana > li.aikajanapala-kaannetty > .aikajanapala {
+        padding: 0 20px 20px;
+    }
+
+    .navbar-custom .nav li a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .navbar-custom .navbar-brand {
+        font-size: 2.7em;
+    }
+    .navbar-custom.affix .navbar-brand {
+        font-size: 2.2em;
+        font-weight: 500;
+    }
+        #motto {
+        background-size: 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aikajana > li {
+        min-height: 170px;
+    }
+    .aikajana > li .aikajanapala {
+        padding: 0 20px 20px 100px;
+    }
+    .aikajana > li .aikajana-kuva {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+    .aikajana > li .aikajana-kuva h4 {
+        margin-top: 40px;
+    }
+    .aikajana > li.aikajanapala-kaannetty > .aikajanapala {
+        padding: 0 100px 20px 20px;
+    }
+    #motto {
+        background-size: 20%;
+    }
 }
