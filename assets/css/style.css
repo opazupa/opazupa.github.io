@@ -256,6 +256,8 @@ fieldset[disabled] .btn-xl.active {
 #navi {
     display: none;
     -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    z-index: 50;
 }
 
 .navbar-custom {
