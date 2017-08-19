@@ -84,6 +84,10 @@ section {
     margin: 30px auto 50px auto;
 }
 
+.img-centered{
+    display: inline;
+}
+
 #timeline {
     background-image: url(../images/wooden.jpg);
     background-size: 100%;
