@@ -238,7 +238,6 @@ fieldset[disabled] .btn-xl.active {
     -webkit-backface-visibility: hidden !important;
     -webkit-transform-style: preserve-3d !important;
     -webkit-tap-highlight-color: transparent;
-    z-index: 50 !important;
 
 }
 
