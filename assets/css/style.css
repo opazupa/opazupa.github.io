@@ -242,6 +242,10 @@ fieldset[disabled] .btn-xl.active {
 
 }
 
+.navbar-wrapper {
+    height: 90px;
+}
+
 .navbar-custom {
     background-color: #494949;
     border-color: transparent;

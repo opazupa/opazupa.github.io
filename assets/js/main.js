@@ -403,4 +403,3 @@ $(document).ready(function () {
     })(jQuery);
 });
 
-// TODO: animmoitdut sectionit sivuilta tai alhaalta
