@@ -811,7 +811,7 @@ footer {
     -ms-transition: opacity 500ms;
 }
 
-.fade-in{
+.fade {
     opacity: 1;
     transition: opacity 500ms ease-in-out;
     -moz-transition: opacity 500ms ease-in-out;
