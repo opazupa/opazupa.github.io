@@ -322,11 +322,7 @@ $(document).ready(function () {
     setUpBars(circleBars, kielitaidot);
     setUpBars(progressBars, ohjelmointitaidot);
     $('#loading-screen').fadeOut(1500, function () {
-<<<<<<< refs/remotes/origin/master
-        $('#navi').addClass("fade-in");
-=======
         $('#navi').addClass("fade");
->>>>>>> HEAD~0
         $('.intro').slideDown(1500);
     });
 
