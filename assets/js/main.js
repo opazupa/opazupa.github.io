@@ -298,10 +298,10 @@ new Vue({
     },
     methods: {
         shuffle: function () {
-            this.items = _.shuffle(this.items)
+            this.items = _.shuffle(this.items);
         }
     }
-})
+});
 
 
 function clearBars(bars) {
@@ -322,7 +322,7 @@ $(document).ready(function () {
     setUpBars(circleBars, kielitaidot);
     setUpBars(progressBars, ohjelmointitaidot);
     $('#loading-screen').fadeOut(1500, function () {
-        $('#navi').fadeIn();
+        $('#navi').addClass("fade-in");
         $('.intro').slideDown(1500);
     });
 
@@ -344,20 +344,14 @@ $(document).ready(function () {
 
             var scrollTop = $(this).scrollTop();
 
-            if (scrollTop >= scrollPos && scrollTop != 0) {
-                
-                $('#navi').fadeOut();
-
+            if (scrollTop >= scrollPos && scrollTop !== 0) {
+                $('#navi').removeClass("fade-in");
             } else {
-                $('#navi').fadeIn();
-                
+                $('#navi').addClass("fade-in");
             }
-            console.log(scrollTop + "  -  " + scrollPos);
-
             scrollPos = scrollTop;
 
             // Move intro on scroll
-
             if (!(scrollPos > $('header').height()) / 3) {
                 $('.intro').css({
                     "transform": "translateY(" + scrollPos / 3.2 + "px)"

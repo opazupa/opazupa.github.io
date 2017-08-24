@@ -234,10 +234,11 @@ fieldset[disabled] .btn-xl.active {
 }
 
 #navi {
-    display: none;
     -webkit-backface-visibility: hidden !important;
-    -webkit-transform-style: preserve-3d !important;
     -webkit-tap-highlight-color: transparent;
+   transition: opacity 500ms linear; !important
+   -moz-transition: opacity 500ms linear; !important
+   -webkit-transition: opacity 500ms linear; !important
 
 }
 
@@ -246,6 +247,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom {
+    opacity: 0;
     background-color: #494949;
     border-color: transparent;
 }
@@ -799,6 +801,23 @@ footer {
     font-weight: 700;
     font-style: italic;
     
+}
+.fade:hover {
+    opacity: 0.75;
+    transition: opacity 500ms ;
+    -moz-transition: opacity 500ms ;
+    -webkit-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+}
+
+.fade-in{
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+    -moz-transition: opacity 500ms ease-in-out;
+    -webkit-transition: opacity 500ms ease-in-out;
+    -o-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
 }
 
 @media (min-width: 370px) {
