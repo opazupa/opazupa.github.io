@@ -802,7 +802,7 @@ footer {
     font-style: italic;
     
 }
-.fade:hover {
+.navbar-fade:hover {
     opacity: 0.75;
     transition: opacity 500ms ;
     -moz-transition: opacity 500ms ;
@@ -811,7 +811,7 @@ footer {
     -ms-transition: opacity 500ms;
 }
 
-.fade {
+.navbar-fade {
     opacity: 1;
     transition: opacity 500ms ease-in-out;
     -moz-transition: opacity 500ms ease-in-out;

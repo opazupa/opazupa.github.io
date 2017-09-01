@@ -322,7 +322,7 @@ $(document).ready(function () {
     setUpBars(circleBars, kielitaidot);
     setUpBars(progressBars, ohjelmointitaidot);
     $('#loading-screen').fadeOut(1500, function () {
-        $('#navi').addClass("fade");
+        $('#navi').addClass("navbar-fade");
         $('.intro').slideDown(1500);
     });
 
@@ -345,9 +345,9 @@ $(document).ready(function () {
             var scrollTop = $(this).scrollTop();
 
             if (scrollTop >= scrollPos && scrollTop !== 0) {
-                $('#navi').removeClass("fade");
+                $('#navi').removeClass("navbar-fade");
             } else {
-                $('#navi').addClass("fade");
+                $('#navi').addClass("navbar-fade");
             }
             scrollPos = scrollTop;
 
