@@ -568,7 +568,11 @@ fieldset[disabled] .btn-xl.active {
 .portfolio-modal .modal-dialog {
     margin: 0;
     height: 100%;
-    width: auto;
+    width: auto; 
+}
+
+.in {
+    padding-right: 0px !important;
 }
 
 .portfolio-modal .modal-content {
