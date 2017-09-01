@@ -321,7 +321,7 @@ $(document).ready(function () {
     initialize();
     setUpBars(circleBars, kielitaidot);
     setUpBars(progressBars, ohjelmointitaidot);
-    $('#loading-screen').fadeOut(1500, function () {
+    $('#loading-screen').fadeOut(3000, function () {
         $('#navi').addClass("navbar-fade");
         $('.intro').slideDown(1500);
     });
