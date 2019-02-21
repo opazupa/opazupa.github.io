@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-// TODO: sivusta liukuvat sectionit kun scrollataan (x)
-// TODO: Tyylit (x..)
-// TODO: Fontit (etenkin aikajana) (x)
-// TODO: php-scripti (ehkä ulkoinen api)
-// TODO: paddingit yms. (x.. aika hyvä)
-// TODO: modalit (sisältö puuttuu)
-// TODO: social linkit (x)
-// TODO: palapelipalat?
 
-Hyviä fontteja:
-Montserrat, ostricht sans, planquin
---->
-
-<head>
+  <head>
 
     <!-- Yleiset asetukset  -->
     <meta charset="utf-8">
@@ -27,638 +14,623 @@ Montserrat, ostricht sans, planquin
 
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900|Merienda|Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900|Merienda|Montserrat" rel="stylesheet"
+      type="text/css">
 
-</head>
+  </head>
 
-<body id="ylalaita" class="index">
+  <body id="ylalaita" class="index">
 
     <div id="loading-screen">
-        <div id="spinner-frame">
-            <div id="spinner">
-                <img src="assets/images/cat.gif" style="responsive">
-                <p id="latausteksti">Wee I'm loading...</p>
-            </div>
+      <div id="spinner-frame">
+        <div id="spinner">
+          <img src="assets/images/cat.gif" style="responsive">
+          <p id="latausteksti">Wee I'm loading...</p>
         </div>
+      </div>
     </div>
-
     <!-- Navigointi palikkka -->
-
-
-
     <!-- Header -->
     <header>
-           <div class="navbar-wrapper">
-    <nav id="navi" class="navbar navbar-default navbar-custom  navbar-fixed-top">
-        <div class="container">
+      <div class="navbar-wrapper">
+        <nav id="navi" class="navbar navbar-default navbar-custom  navbar-fixed-top">
+          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-group">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="glyphicon glyphicon-menu-hamburger"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#ylalaita">Olli Saarinen</a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-group">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="glyphicon glyphicon-menu-hamburger"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#ylalaita">Olli Saarinen</a>
             </div>
 
             <div class="collapse navbar-collapse" id="nav-group">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#ylalaita"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#me">Me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#timeline">My timeline</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#more">Something more</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#blog">Blog</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li class="hidden">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                  <a href="#ylalaita"></a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#me">Me</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#timeline">My timeline</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#more">Something more</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#blog">Blog</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+                <li class="hidden">
 
-                    </li>
-                </ul>
+                </li>
+              </ul>
 
             </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="intro">
+          <div class="intro-johdatus">Hi! I'm Olli.</div>
+          <div class="intro-otsikko">It's nice to meet you!</div>
+          <a href="#me" class="page-scroll btn btn-xl">Find out more!</a>
         </div>
-    </nav>
-    </div>
-        <div class="container">
-            <div class="intro">
-                <div class="intro-johdatus">Hi! I'm Olli.</div>
-                <div class="intro-otsikko">It's nice to meet you!</div>
-                <a href="#me" class="page-scroll btn btn-xl">Find out more!</a>
-            </div>
-
-        </div>
+      </div>
     </header>
-
     <!-- Me -->
     <section id="me">
-        <div class="container">
-            <div class="rivi">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-paaotsikko"> Me </h2>
-                </div>
-            </div>
-            <div class="row-eq-heigth text-center">
-                <div class="col-md-4 col-md-push-4 animation-element slide-up" id="my-info">
-
-                    <img src="assets/images/opaBW.jpg" class="img-responsive " id="omakuva-me">
-                    <h3 class="section-alaotsikko">Olli Saarinen (B.Sc)</h3>
-
-                    <div class="info-container container-block">
-                        <ul class="list-unstyled info-list">
-                            <li class="hometown"><i class="fa fa-child"></i> Lahti born &amp; raised</li>
-                            <li class="hometown"><i class="fa fa-gear fa-spin"></i> Jamming currently @ Tampere, Finland</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="row-eq-heigth text-center">
-                <div class="col-md-4 col-md-pull-4 animation-element slide-left" id="skill-ympyrat">
-                    <div>
-                        <h3 class="section-alaotsikko">Social skills</h3>
-                        <div>
-
-                            <div id="suomi" class="col-xs-6 kieli-skill">
-                                <p class="kieliteksti">Finnish <i class="famfamfam-flag-fi"> </i></p>
-                            </div>
-
-                            <div id="englanti" class="col-xs-6 kieli-skill">
-                                <p class="kieliteksti">English <i class="famfamfam-flag-gb"> </i></p>
-                            </div>
-                        </div>
-                        <div>
-
-                            <div id="ruotsi" class="col-xs-6 kieli-skill">
-                                <p class="kieliteksti">Swedish <i class="famfamfam-flag-se"></i></p>
-                            </div>
-
-                            <div id="saksa" class="col-xs-6 kieli-skill">
-                                <p class="kieliteksti">German <span class="famfamfam-flag-de"> </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-eq-heigth text-center">
-                <div class="col-md-4 animation-element slide-right">
-                    <h3 class="section-alaotsikko">
-                        Programming skills</h3>
-
-                    <div id="skill-palkit">
-
-                        <h4 class="skill-title"><i class="fa fa-terminal"></i> Backend</h4>
-                        <div id="cplus" class="prog-skill"></div>
-                        <div id="csharp" class="prog-skill"></div>
-                        <div id="java" class="prog-skill"></div>
-                        <div id="python" class="prog-skill"></div>
-                        <h4 class="skill-title"> <i class="fa fa-code"></i> Frontend</h4>
-                        <div id="htmlcss" class="prog-skill"></div>
-                        <div id="javascript" class="prog-skill"></div>
-                        <div id="jquery" class="prog-skill"></div>
-                        <div id="reactredux" class="prog-skill"></div>
-
-                        <h4 class="skill-title"><i class="fa fa-database"></i> Other</h4>
-                        <div id="psql" class="prog-skill"></div>
-                        <div id="oracle" class="prog-skill"></div>
-
-                    </div>
-                </div>
-                <div id="luonne-lista" class="demo col-lg-12" @mouseleave="shuffle" @mouseenter="shuffle">
-                    <h3 class="section-alaotsikko">My way of life: <i class="fa fa-rocket fa-lg"></i></h3>
-                    <transition-group name="flip-list" tag="li">
-                        <li id="luonteet" v-for="item in items" v-bind:key="item">
-                            {{ item }}
-                        </li>
-                    </transition-group>
-                </div>
-            </div>
+      <div class="container">
+        <div class="rivi">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-paaotsikko"> Me </h2>
+          </div>
         </div>
+        <div class="row-eq-heigth text-center">
+          <div class="col-md-4 col-md-push-4 animation-element slide-up" id="my-info">
+            <img src="assets/images/opaBW.jpg" class="img-responsive " id="omakuva-me">
+            <h3 class="section-alaotsikko">Olli Saarinen (M.Sc)</h3>
+            <div class="info-container container-block">
+              <ul class="list-unstyled info-list">
+                <li class="hometown"><i class="fa fa-child"></i> Lahti born &amp; raised</li>
+                <li class="hometown"><i class="fa fa-gear fa-spin"></i> Jamming currently @ Tampere, Finland</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row-eq-heigth text-center">
+          <div class="col-md-4 col-md-pull-4 animation-element slide-left" id="skill-ympyrat">
+            <div>
+              <h3 class="section-alaotsikko">Social skills</h3>
+              <div>
+                <div id="suomi" class="col-xs-6 kieli-skill">
+                  <p class="kieliteksti">Finnish <i class="famfamfam-flag-fi"> </i></p>
+                </div>
+                <div id="englanti" class="col-xs-6 kieli-skill">
+                  <p class="kieliteksti">English <i class="famfamfam-flag-gb"> </i></p>
+                </div>
+              </div>
+              <div>
+                <div id="ruotsi" class="col-xs-6 kieli-skill">
+                  <p class="kieliteksti">Swedish <i class="famfamfam-flag-se"></i></p>
+                </div>
+                <div id="saksa" class="col-xs-6 kieli-skill">
+                  <p class="kieliteksti">German <span class="famfamfam-flag-de"> </span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-eq-heigth text-center">
+          <div class="col-md-4 animation-element slide-right">
+            <h3 class="section-alaotsikko">Programming skills</h3>
+            <div id="skill-palkit">
+              <h4 class="skill-title"><i class="fa fa-terminal"></i> Backend</h4>
+              <div id="csharp" class="prog-skill"></div>
+              <div id="java" class="prog-skill"></div>
+              <div id="python" class="prog-skill"></div>
+              <div id="node" class="prog-skill"></div>
 
+              <h4 class="skill-title"> <i class="fa fa-code"></i> Frontend</h4>
+              <div id="htmlcss" class="prog-skill"></div>
+              <div id="javascript" class="prog-skill"></div>
+              <div id="angular" class="prog-skill"></div>
+              <div id="reactredux" class="prog-skill"></div>
+
+              <h4 class="skill-title"><i class="fa fa-database"></i> Other</h4>
+              <div id="mssql" class="prog-skill"></div>
+              <div id="docker" class="prog-skill"></div>
+              <div id="psql" class="prog-skill"></div>
+              <div id="bamboo" class="prog-skill"></div>
+            </div>
+          </div>
+          <div id="luonne-lista" class="demo col-lg-12" @mouseleave="shuffle" @mouseenter="shuffle">
+            <h3 class="section-alaotsikko">My way of life: <i class="fa fa-rocket fa-lg"></i></h3>
+            <transition-group name="flip-list" tag="li">
+              <li id="luonteet" v-for="item in items" v-bind:key="item">
+                {{ item }}
+              </li>
+            </transition-group>
+          </div>
+        </div>
+      </div>
     </section>
-
     <!-- Aikajana -->
     <section id="timeline" class="dark-bg">
-        <div class="container">
-            <div class="rivi">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-paaotsikko">My timeline</h2>
-                    <h4 class="section-alaotsikko">“To infinity… and beyond!” <br> ~Buzz Lightyear</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="aikajana">
-                        <li class="aikajanapala">
-                            <div class="aikajana-kuva aikajana-paa animation-element slide-up">
-                                <h4>My Story
-                                    <br>Begins<br> In 1993
-                                </h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="aikajana-kuva animation-element slide-right">
-                                <a href="https://salpausselanlukio.onedu.fi/web/" target="_blank"><img class="img-circle img-responsive" src="assets/images/timeline/lahti.jpg" border="4" alt="">
-                                </a>
-                            </div>
-                            <div class="aikajanapala animation-element slide-left">
-                                <div class="aikajana-otsikko">
-                                    <h4 class="aikavali">2009-2012</h4>
-                                    <h4 class="alaotsikko">Matriculation examination, Salpausselkä's Upper Secondary School, Lahti</h4>
-                                </div>
-                                <div class="aikajana-runko">
-                                    <p class="pikkuteksti">2012 I gratuated from Salpausselkä's upper secondary school. I have A-grades on Finnish, maths, English, Swedish, German and social studies. </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="aikajanapala-kaannetty">
-                            <div class="aikajana-kuva animation-element slide-left">
-                                <a href="https://puolustusvoimat.fi" target="_blank">
-                                    <img class="img-circle img-responsive" src="assets/images/timeline/pv.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="aikajanapala animation-element slide-right">
-                                <div class="aikajana-otsikko">
-                                    <h4 class="aikavali">July 2012 - July 2013</h4>
-                                    <h4 class="alaotsikko">Military service in Finnish defence forces</h4>
-                                </div>
-                                <div class="aikajana-runko">
-                                    <p class="pikkuteksti">I served as Second Lieutenant with RUK-experience in Häme regiment of logistics. </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="aikajana-kuva animation-element slide-right">
-                                <a href="https://tut.fi" target="_blank">
-                                    <img class="img-circle img-responsive" src="assets/images/timeline/tty.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="aikajanapala animation-element slide-left">
-                                <div class="aikajana-otsikko">
-                                    <h4 class="aikavali">July 2013 - Today</h4>
-                                    <h4 class="alaotsikko">Student at Tampere University of Technology, Finland</h4>
-                                </div>
-                                <div class="aikajana-runko">
-                                    <p class="pikkuteksti">I'm finishing my master's studies at TUT in the near future. Amazing times, even more amazing memories and the most amazing frineds. Along with studies in automation, software and industrial engineering.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="aikajanapala-kaannetty">
-                            <div class="aikajana-kuva animation-element slide-left">
-                                <a href="https://leanware.fi" target="_blank">
-                                    <img class="img-circle img-responsive" src="assets/images/timeline/leanware.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="aikajanapala animation-element slide-right">
-                                <div class="aikajana-otsikko">
-                                    <h4 class="aikavali">May 2017</h4>
-                                    <h4 class="alaotsikko">Junior software specialist, Leanware Oy, Tampere</h4>
-                                </div>
-                                <div class="aikajana-runko">
-                                    <p class="pikkuteksti">I'm a fullstack software developer creating custom solutions to logistics and industry.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="aikajanapala-kaannetty">
-                            <div class="aikajana-kuva aikajana-paa animation-element slide-up">
-                                <a class="page-scroll" href="#contact">
-                                    <h4>Want to Be
-                                        <br>Part Of
-                                        <br>My Story!</h4>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="rivi">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-paaotsikko">My timeline</h2>
+            <h4 class="section-alaotsikko">“To infinity… and beyond!” <br> ~Buzz Lightyear</h4>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="aikajana">
+              <li class="aikajanapala">
+                <div class="aikajana-kuva aikajana-paa animation-element slide-up">
+                  <h4>My Story
+                    <br>Begins<br> In 1993
+                  </h4>
+                </div>
+              </li>
+              <li>
+                <div class="aikajana-kuva animation-element slide-right">
+                  <a href="https://salpausselanlukio.onedu.fi/web/" target="_blank"><img class="img-circle img-responsive"
+                      src="assets/images/timeline/lahti.jpg" border="4" alt="">
+                  </a>
+                </div>
+                <div class="aikajanapala animation-element slide-left">
+                  <div class="aikajana-otsikko">
+                    <h4 class="aikavali">2009-2012</h4>
+                    <h4 class="alaotsikko">Matriculation examination, Salpausselkä's Upper Secondary School, Lahti</h4>
+                  </div>
+                  <div class="aikajana-runko">
+                    <p class="pikkuteksti">2012 I gratuated from Salpausselkä's upper secondary school. I have A-grades
+                      on Finnish, maths, English, Swedish, German and social studies. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="aikajanapala-kaannetty">
+                <div class="aikajana-kuva animation-element slide-left">
+                  <a href="https://puolustusvoimat.fi" target="_blank">
+                    <img class="img-circle img-responsive" src="assets/images/timeline/pv.jpg" alt="">
+                  </a>
+                </div>
+                <div class="aikajanapala animation-element slide-right">
+                  <div class="aikajana-otsikko">
+                    <h4 class="aikavali">July 2012 - July 2013</h4>
+                    <h4 class="alaotsikko">Military service in Finnish defence forces</h4>
+                  </div>
+                  <div class="aikajana-runko">
+                    <p class="pikkuteksti">I served as Second Lieutenant with RUK-experience in Häme regiment of
+                      logistics. </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="aikajana-kuva animation-element slide-right">
+                  <a href="https://tuni.fi" target="_blank">
+                    <img class="img-circle img-responsive" src="assets/images/timeline/tty.jpg" alt="">
+                  </a>
+                </div>
+                <div class="aikajanapala animation-element slide-left">
+                  <div class="aikajana-otsikko">
+                    <h4 class="aikavali">July 2013 - March 2018</h4>
+                    <h4 class="alaotsikko">Master of Science Student at Tampere University of Technology, Finland</h4>
+                  </div>
+                  <div class="aikajana-runko">
+                    <p class="pikkuteksti">I gratuated from TUT in March 2018. Amazing times,
+                      even more amazing memories and the most amazing friends for the rest of my life. My majors were
+                      automation, software and industrial engineering.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="aikajanapala-kaannetty">
+                <div class="aikajana-kuva animation-element slide-left">
+                  <a href="https://leanware.fi" target="_blank">
+                    <img class="img-circle img-responsive" src="assets/images/timeline/leanware.jpg" alt="">
+                  </a>
+                </div>
+                <div class="aikajanapala animation-element slide-right">
+                  <div class="aikajana-otsikko">
+                    <h4 class="aikavali">May 2017 - Today</h4>
+                    <h4 class="alaotsikko">Software specialist, Leanware Oy, Tampere</h4>
+                  </div>
+                  <div class="aikajana-runko">
+                    <p class="pikkuteksti">
+                      I'm a fullstack software developer creating both product and custom solutions to logistics
+                      and industry.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="aikajanapala-kaannetty">
+                <div class="aikajana-kuva aikajana-paa animation-element slide-up">
+                  <a class="page-scroll" href="#contact">
+                    <h4>Want to Be
+                      <br>Part Of
+                      <br>My Story?
+                    </h4>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-
     <!-- Muuta -->
-
-    <!-- (TODO) muuta infoa tähän
-
-                Karuselliin? (TODO)
-                mukavasti modaaleilla? (TODO)
-
-                 -->
     <section id="more" class="dark-bg">
-        <div class="container">
-            <div class="rivi">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-paaotsikko">Something more...</h2>
-                    <h3 class="section-alaotsikko pikkuteksti">That I love!</h3>
-                </div>
-            </div>
-            <div class="rivi">
-                <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
-                    <a href="#refereemodal" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-legal fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/images/refs-small.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Ice hockey referee</h4>
-                        <p class="pikkuteksti">"The judge" <i class="fa fa-legal"></i></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
-                    <a href="#golfmodal" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-hand-peace-o fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/images/golf-small.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golf</h4>
-                        <p class="pikkuteksti">"Semi pro" <i class="fa fa-hand-peace-o"></i></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
-                    <a href="#winemodal" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-glass fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/images/wines-small.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Wines</h4>
-                        <p class="pikkuteksti">"Enthusiast" <i class="fa fa-glass"></i></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
-                    <a href="#cookingmodal" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-cutlery fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/images/cooking-small.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Cooking</h4>
-                        <p class="pikkuteksti">"Food lover" <i class="fa fa-cutlery"></i></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
-                    <a href="#musicmodal" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-heart fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/images/edm-small.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dance music</h4>
-                        <p class="pikkuteksti">"Party fever" <i class="fa fa-heart"></i></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
-                    <a href="#fitnessmodal" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-level-up fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/images/fitness-small.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Fitness</h4>
-                        <p class="pikkuteksti">"Fit up!" <i class="fa fa-level-up"></i></p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="rivi">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-paaotsikko">Something more...</h2>
+            <h3 class="section-alaotsikko pikkuteksti">That I love!</h3>
+          </div>
         </div>
+        <div class="rivi">
+          <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
+            <a href="#refereemodal" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-legal fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/refs-small.jpg" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Ice hockey referee</h4>
+              <p class="pikkuteksti">"The judge" <i class="fa fa-legal"></i></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
+            <a href="#golfmodal" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-hand-peace-o fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/golf-small.jpg" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Golf</h4>
+              <p class="pikkuteksti">"Semi pro" <i class="fa fa-hand-peace-o"></i></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
+            <a href="#winemodal" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-glass fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/wines-small.png" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Wines</h4>
+              <p class="pikkuteksti">"Enthusiast" <i class="fa fa-glass"></i></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
+            <a href="#cookingmodal" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-cutlery fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/cooking-small.png" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Cooking</h4>
+              <p class="pikkuteksti">"Food lover" <i class="fa fa-cutlery"></i></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
+            <a href="#musicmodal" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-heart fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/edm-small.jpg" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Dance music</h4>
+              <p class="pikkuteksti">"Party fever" <i class="fa fa-heart"></i></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item animation-element slide-up">
+            <a href="#fitnessmodal" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-level-up fa-3x"></i>
+                </div>
+              </div>
+              <img src="assets/images/fitness-small.jpg" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Fitness</h4>
+              <p class="pikkuteksti">"Fit up!" <i class="fa fa-level-up"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Blogi sitten joskus (FUTURE) -->
     <section id="blog">
-        <div class="container">
-            <div class="rivi" align="center">
-                <h2 class="section-paaotsikko">Blog on some day?</h2>
-            </div>
+      <div class="container">
+        <div class="rivi" align="center">
+          <h2 class="section-paaotsikko">Blog on some day...</h2>
+          <h3 class="section-alaotsikko pikkuteksti">In the meantime, why not to checkout my projects from Github
+            <a href="https://github.com/opazupa" target="_blank"><i class="fa fa-github"></i></a>
+          </h3>
         </div>
+      </div>
     </section>
 
     <!-- Yhteystiedot -->
-    <!-- yhteystiedot tähän
-                    2 kolmunia?
-                    vasempaan googlen kartta (api) (TODO)
-                    oikeaan yhteydenotto formi (TODO)
-                    some nappulalinkit (TODO)
-
-                 -->
     <section id="contact" class="dark-bg">
-        <div class="container">
-            <div class="rivi">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-paaotsikko">Contact Me</h2>
-                    <h3 class="section-alaotsikko pikkuteksti">Fill the form and hit send!</h3>
-                </div>
-            </div>
-
-            <div class="rivi">
-                <div class="col-md-6">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="rivi">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="6" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="rivi">
-                    <div class="col-md-6">
-                        <div id="kartta">
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-12 text-center">
-
-            </div>
+      <div class="container">
+        <div class="rivi">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-paaotsikko">Contact Me</h2>
+            <h3 class="section-alaotsikko pikkuteksti">Fill the form and hit send!</h3>
+          </div>
         </div>
+        <div class="rivi">
+          <div class="col-md-6">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="rivi">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name *" id="name" required
+                    data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your Email *" id="email" required
+                    data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required
+                    data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="6" placeholder="Your Message *" id="message" required
+                    data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button type="submit" class="btn btn-xl">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="rivi">
+            <div class="col-md-6">
+              <div id="kartta">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center">
+        </div>
+      </div>
     </section>
 
     <section id="motto">
-        <div class="container-fluid">
-            <div id="mottokuva">
-            </div>
+      <div class="container-fluid">
+        <div id="mottokuva">
         </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="rivi">
-
-                <div class="col-lg-6 col-xs-12">
-                    <ul class="list-inline social-buttons">
-                        <li><a><i class="fa fa-twitter fa-lg animation-element slide-left"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/Opa.Saarinen"><i class="fa fa-facebook fa-lg animation-element slide-left"></i></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/olli-saarinen-25648889/"><i class="fa fa-linkedin fa-lg animation-element slide-left"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/opasaarinen"><i class="fa fa-instagram fa-lg animation-element slide-right"></i></a>
-                        </li>
-                        <li><a><i title="opasaarinen" class="fa fa-snapchat fa-lg animation-element slide-right"></i></a>
-                        </li>
-                        <li><a href="https://github.com/opazupa" target="_blank"><i class="fa fa-github fa-lg animation-element slide-right"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 col-xs-12">
-                    <span class="copyright">Copyright &copy; Olli Saarinen 2017</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="rivi">
+          <div class="col-lg-6 col-xs-12">
+            <ul class="list-inline social-buttons">
+              <li>
+                <a><i class="fa fa-twitter fa-lg animation-element slide-left"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/Opa.Saarinen"><i class="fa fa-facebook fa-lg animation-element slide-left"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/olli-saarinen-25648889/"><i class="fa fa-linkedin fa-lg animation-element slide-left"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/opasaarinen"><i class="fa fa-instagram fa-lg animation-element slide-right"></i></a>
+              </li>
+              <li>
+                <a><i title="opasaarinen" class="fa fa-snapchat fa-lg animation-element slide-right"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/opazupa" target="_blank"><i class="fa fa-github fa-lg animation-element slide-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <span class="copyright">Coded with</span>
+            <i class="heart fa fa-heart"></i>
+            <span> Olli &copy;2017 </span>
+          </div>
         </div>
+      </div>
     </footer>
-
     <!-- Hobby Modals -->
-
     <!-- Refereemodal -->
     <div class="portfolio-modal modal fade" id="refereemodal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Ice hockey referee</h2>
-                                <p class="item-intro text-muted">Something nice...</p>
-                                <img class="img-responsive img-centered" src="assets/images/refs.jpg" alt="">
-                                <p>Here could be told more of the hobby.</p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Ice hockey referee</h2>
+                  <p class="item-intro text-muted">Something nice...</p>
+                  <img class="img-responsive img-centered" src="assets/images/refs.jpg" alt="">
+                  <p>Here could be told more of the hobby.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Golfmodal -->
     <div class="portfolio-modal modal fade" id="golfmodal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Golf</h2>
-                                <p class="item-intro text-muted">Something nice...</p>
-                                <img class="img-responsive img-centered" src="assets/images/golf.jpg" alt="">
-                                <p>Here could be told more of the hobby.</p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Golf</h2>
+                  <p class="item-intro text-muted">Something nice...</p>
+                  <img class="img-responsive img-centered" src="assets/images/golf.jpg" alt="">
+                  <p>Here could be told more of the hobby.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Winemodal -->
     <div class="portfolio-modal modal fade" id="winemodal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Wines</h2>
-                                <p class="item-intro text-muted">Something nice...</p>
-                                <img class="img-responsive img-centered" src="assets/images/wines.jpg" alt="">
-                                 <p>Here could be told more of the hobby.</p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Wines</h2>
+                  <p class="item-intro text-muted">Something nice...</p>
+                  <img class="img-responsive img-centered" src="assets/images/wines.jpg" alt="">
+                  <p>Here could be told more of the hobby.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Cookingmodal -->
     <div class="portfolio-modal modal fade" id="cookingmodal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Cooking &amp; Food</h2>
-                                <p class="item-intro text-muted">Something nice...</p>
-                                <img class="img-responsive img-centered" src="assets/images/cooking.png" alt="">
-                                <p>Here could be told more of the hobby.</p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Cooking &amp; Food</h2>
+                  <p class="item-intro text-muted">Something nice...</p>
+                  <img class="img-responsive img-centered" src="assets/images/cooking.png" alt="">
+                  <p>Here could be told more of the hobby.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Musicmodal -->
     <div class="portfolio-modal modal fade" id="musicmodal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Music</h2>
-                                <p class="item-intro text-muted">Something nice...</p>
-                                <img class="img-responsive img-centered" src="assets/images/edm.jpg" alt="">
-                                 <p>Here could be told more of the hobby.</p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Music</h2>
+                  <p class="item-intro text-muted">Something nice...</p>
+                  <img class="img-responsive img-centered" src="assets/images/edm.jpg" alt="">
+                  <p>Here could be told more of the hobby.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Fitnessmodal -->
     <div class="portfolio-modal modal fade" id="fitnessmodal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Fitness</h2>
-                                <p class="item-intro text-muted">Something nice...</p>
-                                <img class="img-responsive img-centered" src="assets/images/fitness.jpg" alt="">
-                                <p>Here could be told more of the hobby.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Fitness</h2>
+                  <p class="item-intro text-muted">Something nice...</p>
+                  <img class="img-responsive img-centered" src="assets/images/fitness.jpg" alt="">
+                  <p>Here could be told more of the hobby.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Pluginit -->
     <script src="assets/plugins/jquery.min.js"></script>
@@ -676,6 +648,6 @@ Montserrat, ostricht sans, planquin
     <script src="assets/js/bars.js"></script>
     <script src="assets/js/main.js"></script>
 
-</body>
+  </body>
 
 </html>
